@@ -1,0 +1,101 @@
+
+<?xml version='1.0' encoding='utf-8' ?>
+<configuration>
+  <player>
+    <!-- playlist with ads -->
+    <URL>/xml/release.swf</URL>
+    <debugURL>/xml/mediaplayer.swf</debugURL>
+    <autoPlay>false</autoPlay>
+    <isContinuousPlay>false</isContinuousPlay>
+    <flashVars>
+      <!-- no deeplinkID set -->
+    </flashVars>
+    <resize>true</resize>
+    <externalResizeMethod>resizePlayer</externalResizeMethod>
+    <feed>/videoxml/ivideo_feed_20110209214500.xml</feed>
+    <config>
+      <playerSettings>
+        <adBumperIn></adBumperIn>
+        <adBumperOut></adBumperOut>
+        <maxBitrate>30000</maxBitrate>
+        <minBitrate>0</minBitrate>
+        <width>480</width>
+        <height>270</height>
+        <timedTextEnabled>false</timedTextEnabled>
+        <fullEpisodeMode>false</fullEpisodeMode>
+        <maintainAspectRatio>false</maintainAspectRatio>
+        <smoothing>true</smoothing>
+        <bandwidthTest>true</bandwidthTest>
+        <bandwidthTestUrl>/xml/bw_50k.jpg</bandwidthTestUrl>
+        <bandwidthTestTTL>5</bandwidthTestTTL>
+        <bandwidthTestCount>1</bandwidthTestCount>
+      </playerSettings>
+      <playerSettingsExpressions>
+        <expression>
+          <term name='eq' type='op'>
+            <term name='PAC' type='var'></term>
+            <term name='0' type='literal'></term>
+          </term>
+          <return>
+            <configProperty id='adBumperIn'></configProperty>
+            <configProperty id='adBumperOut'></configProperty>
+          </return>
+        </expression>
+        <expression>
+          <term failOn='Not first time in playlist' name='gt' type='op'>
+            <term name='PAC' type='var'></term>
+            <term type='literal' value='0'></term>
+          </term>
+          <return>
+            <configProperty id='adBumperIn'>/flash/video/bumper_in.flv</configProperty>
+            <configProperty id='adBumperOut'>/flash/video/bumper_back.flv</configProperty>
+          </return>
+        </expression>
+      </playerSettingsExpressions>
+      <adSettings>
+        <adServer>freewheel</adServer>
+        <adProps>
+        <numberOfRequests>1</numberOfRequests>
+        </adProps>       
+        <adExpression>
+        <term type="op" name="gt" failOn="elapsed time since last ad is less than adTimerMinMillis">
+        <term type="var" name="timeSinceLastAd"/>
+        <term type="literal" value="150000"/>
+        </term>  
+        </adExpression>
+      </adSettings>
+      <reportSettings>
+        <playerInfo>
+          <viralPlayerName>iCarlyPlayer</viralPlayerName>
+          <partnerPlayerName>iCarlyPlayer</partnerPlayerName>
+          <networkPlayerName>iCarlyPlayer</networkPlayerName>
+        </playerInfo>
+        <googleReporter enabled="true">
+          <account>UA-1464777-6</account>
+        </googleReporter>
+        <videoReporter enabled="true">
+          <mediaTracking enabled="true" />
+          <adTracking enabled="false" /> 
+          <viralAccount>viaviralkids</viralAccount>
+          <partnerAccount>viaviralkids</partnerAccount>
+          <networkAccount>nickvia,viaicarly</networkAccount>
+          <customFields>
+            <item name="prop18" value="playlist" />
+          </customFields>
+          <charSet>ISO-8859-1</charSet>
+        </videoReporter>
+        <nielsenReporter enabled="true">
+          <clientId>us-300231</clientId>
+          <videoCensusId>c02</videoCensusId>
+        </nielsenReporter>
+        <comScore enabled="true">
+          <primaryId>6059064</primaryId>
+        </comScore>    
+        <quantCast enabled="true">
+          <publisherId>p-94wNw88f65Rhk</publisherId>
+          <demoTargeting enabled="true" />
+        </quantCast>
+      </reportSettings>
+    </config>
+  </player>
+</configuration>
