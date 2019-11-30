@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iCarly.ga</title>
+    <link href='/icon/favicon.ico' rel='shortcut icon' type='image/x-icon'/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
+    <meta name="apple-itunes-app" content="app-id=1451380171"/>
+    <meta name="description" content="iCarly.ga has GAMES, VIDEOS, BLOGS, and PHOTOS of Carly, Sam, Freddie, Gibby, Spencer and MORE! What are you waiting for? Head over there NOW!">
+    <meta name="keywords" content="iCarly, icarly.com, briangriffen.tk, brian griffen finobe, sam, gibby, spencer, igibby.com, bruh, icarly.ga, icarly 2, carly, carly shay" />
+    <meta name="image" content="/images/icarly.png">
+    <meta name="og:image" content="/images/icarly.png">
+    <meta content='text/html;charset=UTF-8' http-equiv='content-type' />
+    <meta content='iCarly.com' http-equiv='description' />
+    <meta content='iCarly.com' http-equiv='keywords' />
+    <link href='/stylesheets/style.css' media='screen' rel='stylesheet' type='text/css' />
+    <link href='/stylesheets/sifr.css' media='screen' rel='stylesheet' type='text/css' />
+    <link href='/stylesheets/home.css' media='screen' rel='stylesheet' type='text/css'/>
+    <link href='/icon/favicon.ico' rel='shortcut icon' type='image/x-icon'/>
+    <script type='text/javascript'>
+      var contentType = '';
+      var prop4 = '';
+      var prop21 = '';
+      var prop22 = '';
+    </script>
+    <script src='/js/jquery.js' type='text/javascript'></script>
+    <script src='/js/jquery.browser.js' type='text/javascript'></script>
+    <script src='/js/findOS.js' type='text/javascript'></script>
+    <script src='/js/update.js' type='text/javascript'></script>
+    <script src='/js/login.js' type='text/javascript'></script>
+    <script src='/js/site.js' type='text/javascript'></script>
+    <script src='/js/sifr.js' type='text/javascript'></script>
+    <script src='/js/sifr-config.js' type='text/javascript'></script>
+    <script src='/js/gameReport.js' type='text/javascript'></script>
+    <script src='/js/init.js' type='text/javascript'></script>
+    <script type="text/javascript" src="/js/icarly_anr.js"></script>
+    <script type="text/javascript">
+    	var pageName=location.pathname;    
+    	var account_info = "nickvia,viaicarly"; 
+    
+        if (window.location.href.indexOf("review.") != -1) 
+          account_info = "nickviadev"; 
+        com.mtvi.reporting.Account={ 
+          name: account_info, 
+          dynamicAccountSelection: false, 
+          linkInternalFilters: 'javascript:', 
+          trackExternalLinks: true, 
+          trackDownloadLinks: true 
+        }; 
+        
+        var dispatcher=new com.mtvi.reporting.Dispatcher(); 
+        com.mtvi.config.qs=com.mtvi.util.queryStringToHash(window.location.search); 
+        dispatcher.setDefaultData(); 
+        dispatcher.setAttribute("pageName","icarly"+location.pathname); 
+        dispatcher.setAttribute("channel","icarly");
+        dispatcher.setAttribute("hier1","icarly"+location.pathname); 
+        dispatcher.setAttribute("prop4",prop4);
+        dispatcher.setAttribute("prop21",prop21);    
+        com.mtvi.ads.AdManager.setDartSite("icarly.nol"); 
+        com.mtvi.ads.AdManager.setDefaultSections(location.pathname); 
+        com.mtvi.ads.AdManager.setPositionThreshold(2); 
+        
+       if(contentType=='game')
+       	{
+       		dispatcher.setAttribute("prop4","icarly-"+prop4);
+       	}
+        
+        else if (contentType=='gallery')
+       	{
+        		dispatcher.setAttribute("prop22",pageName);
+      	}	
+        dispatcher.sendCall();
+        
+    function gamePlay(){
+    	dispatcher.setAttribute("pageName",pageName+"-playAgain");
+    	dispatcher.sendCall();
+    	}
+    	
+    function audio(audioName){
+    	var prop21=audioName;
+    	dispatcher.setAttribute("pageName",pageName+"-"+prop21);
+    	dispatcher.sendCall();
+    	}
+    </script>
+  </head>
+  <body>
+    <div id='update_msg'></div>
+    <div id='frame'>
+      <div id='header'>
+        <div id='header_left'>
+          <div id='logo'>
+            <object type='application/x-shockwave-flash' height='168' width='520' data='/images/logo.swf'>
+  <param name='flashVars' value='siteRoot=' />
+  <param name='movie' value='/images/logo.swf' />
+  <param name='quality' value='high' />
+  <param name='allowScriptAccess' value='always' />
+  <param name='allowFullScreen' value='true' />
+  <param name='wmode' value='transparent' />
+</object>
+          </div>
+          <div id='header_info'>
+            <div id='date'>
+              <div class='shadowed'>
+                Today is
+                <span id='date-str-1'></span>
+              </div>
+              <div class='shadow'>
+                Today is
+                <span id='date-str-2'></span>
+              </div>
+            </div>
+            <div id='tagline'>
+              <div class='shadowed'>
+                <span class='open_quote'></span>
+                <span id='quote-str-1'>im stuff!!</span>
+                <span class='close_quote'></span>
+              </div>
+              <div class='shadow'>
+                <span class='open_quote'></span>
+                <span id='quote-str-2'>im stuff!!</span>
+                <span class='close_quote'></span>
+              </div>
+            </div>
+          </div>
+          <div id='search'>
+            <form action='https://google.com/search' enctype='text/form-data' id='searchform' method='GET'>
+              <input id='search_terms' name='q' type='text' />
+              <input class='submit' id='searchsubmit' type='submit' value='' />
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id='header_right'>
+        <div id='header_about'>
+          <a href='/about/index.html'></a>
+        </div>
+        <div id='header_animation'>
+          <img src='/images/51485_4022792467.gif' width='276' height='236'/>
+        </div>
+        <div id='your_name'></div>
+        <div id='header_feedback'>
+          <a href='/SendStuff/textus.html'></a>
+        </div>
+      </div>
+      <div id='inner_frame'>
+        <ul id='top_nav'>
+          <li id='top_nav_blogs'>
+            <a href='/iBlogs/index.html'></a>
+          </li>
+          <li id='top_nav_snaps'>
+            <a href='/iSnaps/index.html'></a>
+          </li>
+          <li id='top_nav_news'>
+            <a href='/iNews/index.html'></a>
+          </li>
+          <li id='top_nav_video'>
+            <a href='/iVideo/index.html'></a>
+          </li>
+          <li id='top_nav_play'>
+            <a href='/iPlay/index.html'></a>
+          </li>
+          <li id='top_nav_songs'>
+            <a href='/iSongs/index.html'></a>
+          </li>
+          <li id='top_nav_help'>
+            <a href='/Help/index.html'></a>
+          </li>
+          <li id='top_nav_send'>
+            <a href='/SendStuff/index.html'></a>
+          </li>
+        </ul>
+        <div id='content_frame'>
+          <div class='orangeburst' id='content'>
+            <script src='/js/5min/video_page_all_channels.js' type='text/javascript'></script>
+            <script src='/js/polls_and_ratings/data.js' type='text/javascript'></script>
+            <script src='/js/elevator.js' type='text/javascript'></script>
+            <script src='/js/ratingInfoToAS.js' type='text/javascript'></script>
+            <script language='javascript' src='/js/ratingSubmit.js' type='text/javascript'></script>
+            <script src='/js/popupForEmbed.js' type='text/javascript'></script>
+            <script src='/js/popSend.js' type='text/javascript'></script>
+            <script type='text/javascript'>
+              var ratingSubmit = {};
+              
+              function setupRatingSubmit(){
+                  // RatingSubmit object handle
+                  var pollHost = '';
+              
+                  // for-beta-haml_home.2009-06-19_13-53.haml:
+                  //var pollHost = 'http://beta.polls.icarly.com';
+              
+                  // for-production-haml_home.2009-06-17_13-26.haml:
+                  pollHost = 'http://polls.icarly.com';
+              
+                  ratingSubmit = new RatingSubmit({submitURL:pollHost});
+              }
+              setupRatingSubmit();
+              
+              function submitVote(assetId, rating) {
+                 ratingSubmit.submit(assetId,rating);
+                 // alert('This is only a test.\n Had this been real, you would have submitted this vote: \nassetId: '+assetId+', rating: '+rating);
+              }
+              
+              var current_video = 0
+              
+              function setNewVideo(vidId) {
+                //alert(vidId)
+                if (vidId && (vidId != -1)) {
+                  current_video = vidId
+                  if (document.getElementById('home_player').setId)
+                    document.getElementById('home_player').setId(vidId)
+                }
+              }
+              
+              function embedThis(){
+                //alert (current_video)
+                var l_arr = ('' + document.location).split('/')
+                var baseurl = l_arr[0] + '//' + l_arr[2] + '/embedVideo/index.html'
+                var popupSetter = new EmbedPopupSetter(baseurl)
+                if (current_video != -1) 
+                  popupSetter.popup(current_video)
+              }
+              
+              var embedPopupSetter = null;
+              function setupPopupForEmbed(){
+                 embedPopupSetter = new EmbedPopupSetter('/embedVideo/index.html');
+              }
+              
+              var video_dictionary = {}
+              var vid_obj
+              var chan_obj = ALL_CHANNELS
+              for (var chans in chan_obj)
+              for (var cats in chan_obj[chans].categories) {
+                for (var vids in chan_obj[chans].categories[cats].videos) {
+                  vid_obj = chan_obj[chans].categories[cats].videos[vids]
+                  video_dictionary[vids] = vid_obj
+                }
+              }
+            </script>
+            <div id='home_content_container'>
+              <div id='home_movie_container'>
+                <object type='application/x-shockwave-flash' id='home_player' height='455' width='920' data='/flash/loader_zoom_home2.swf'>
+  <param name='flashVars' value='siteRoot=&sid=iCarly__Home&playerKind=home&channel=2&signHighlights1=%2Fassets%2F1%2Fimage%2F2009%2F05%2F20%2F52282_3823041291.png&signHighlights2=%2Fassets%2F1%2Fimage%2F2009%2F05%2F20%2F52321_2360727327.png&signYour1=%2Fassets%2F1%2Fimage%2F2009%2F05%2F20%2F52369_602016.png&signYour2=%2Fassets%2F1%2Fimage%2F2009%2F05%2F20%2F52411_3212609428.png&signExtras1=%2Fassets%2F1%2Fimage%2F2009%2F05%2F20%2F52445_3349312464.png&signExtras2=%2Fassets%2F1%2Fimage%2F2009%2F05%2F20%2F52490_3317801772.png&titleHighlights=%2Fassets%2F1%2Fimage%2F2009%2F05%2F20%2F52572_1847283874.png&titleYour=%2Fassets%2F1%2Fimage%2F2009%2F05%2F20%2F52624_2344718379.png&titleExtras=%2Fassets%2F1%2Fimage%2F2009%2F05%2F20%2F52670_3073255832.png&seeMoreVideos=%2Fassets%2F1%2Fimage%2F2009%2F05%2F20%2F52895_1173772057.png&speechBubble=%2Fassets%2F1%2Fimage%2F2009%2F05%2F20%2F52724_1120561516.png&makeHomepage=%2Fassets%2F1%2Fimage%2F2009%2F05%2F20%2F52765_2336329243.png&clickRedBtn=%2Fassets%2F1%2Fimage%2F2009%2F05%2F20%2F52852_4175402679.png&voteUrl=%2Fassets%2F1%2Fimage%2F2009%2F06%2F22%2F63641_1981210363.png&titleUrl=%2Fassets%2F1%2Fimage%2F2009%2F06%2F22%2F63515_297162529.png&thanksUrl=%2Fassets%2F1%2Fimage%2F2009%2F06%2F22%2F63681_3529490145.png&loadingWord=%2Fassets%2F1%2Fimage%2F2009%2F07%2F02%2F63972_1646033434.png&embedButton=%2Fassets%2F1%2Fimage%2F2009%2F09%2F16%2F60310_2091041750.png&sendButton=%2Fassets%2F1%2Fimage%2F2009%2F09%2F16%2F60242_2858230946.png&uploadButton=%2Fassets%2F1%2Fimage%2F2009%2F09%2F16%2F60273_3258905649.png&loadUrl=%2Fflash%2Fhome_player94.swf&playerConfig=%2Fvideoxml%2Fivideo_20110518115500.xml&overlay=%2Fassets%2F1%2Fimage%2F2013%2F05%2F29%2F70529_3800756141.png' />
+  <param name='movie' value='/flash/loader_zoom_home2.swf' />
+  <param name='quality' value='high' />
+  <param name='allowScriptAccess' value='always' />
+  <param name='allowFullScreen' value='true' />
+  <param name='wmode' value='transparent' />
+</object>
+              </div>
+              <div class='clear' id='home_placeholder'></div>
+              <div id='home_content'>
+                <div class='left_column'>
+                  <script src='/js/polls_and_ratings/data.js' type='text/javascript'></script>
+                  <!-- poll javascript -->
+                  <script language='javascript' src='/js/pollsHandler.js' type='text/javascript'></script>
+                  <script language='javascript' type='text/javascript'>
+                    // <!--
+                    
+                        function setupPoll(){
+                            // testing code
+                            // alert('calling yay : )');
+                            if(pollHandler_obj){
+                                pollHandler_obj.setupPoll({
+                                    containerHTMLID : 'poll_master',
+                                    question : {
+                                        questionPrefix : 'poll_question_home_',
+                                        formNamePrefix : 'question_home_',
+                                        inputHTMLID : 'ivoteRadio'
+                                    },
+                                    answer : {
+                                        answerPrefix : 'poll_answer_home_',
+                                        labelClassName : 'label',
+                                        barClassName : 'barWrapper'
+                                    },
+                                    submitHTMLID : 'poll_home_submit',
+                                    submitURL : 'http://polls.icarly.com',
+                                    dataRef : POLLS_AND_RATINGS
+                                });
+                            }
+                        }
+                      
+                    // -->
+                  </script>
+                  <!-- new w content  <( -->
+                  <!-- open poll css wrappers x4 <( -->
+                  <div id='home_poll_wrapper_top'>
+                    <div id='home_poll_wrapper_bottom'>
+                      <div id='home_poll_wrapper'>
+                        <div id='home_poll_v2fc'>
+                          <div id='home_poll_v2fc_left'>
+                            <div id='home_poll_header_title'></div>
+                            <div id='home_poll_left_inner'>
+                              <div id='home_poll_v2fc_left_content'>
+                                <img id='home_poll_image' src='/images/66293_1224993909.gif' />
+                                <div id='home_poll_image_bottom'></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div id='home_poll_v2fc_right'>
+                            <div id='home_poll_v2fc_header2_wrapper'>
+                              <div id='home_poll_v2fc_header2'>
+                                <div id='home_poll_v2fc_header1_wrapper'>
+                                  <div id='home_poll_v2fc_header1'>
+                                    <h1>
+                                      Sam Asks:
+                                    </h1>
+                                  </div>
+                                </div>
+                                <div id='home_poll_v2fc_header1_content'>
+                                  <h2>
+                                    What are you doing this Saturday?
+                                  </h2>
+                                </div>
+                              </div>
+                            </div>
+                            <div id='home_poll_v2fc_right_content'></div>
+                            <div id='poll_master' class='home_poll_right_content'>
+                            
+                            <div id='poll_question_home_80' class='home_poll_questions'>
+                                <form name='question_home_80'>
+                                    <div class='row'>
+                                        <input class='question' name='ivoteRadio' type='radio' value='0' />
+                                        <div class='label'>Watching the new show, Victorious!</div>
+                                    </div>
+                                    <div class='row'>
+                                        <input class='question' name='ivoteRadio' type='radio' value='1' />
+                                        <div class='label'>Listening to the Victorious Theme Song! </div>
+                                    </div>
+                                    <div class='row'>
+                                        <input class='question' name='ivoteRadio' type='radio' value='2' />
+                                        <div class='label'>Telling my friends about Victorious!</div>
+                                    </div>
+                                    <div class='row'>
+                                        <input class='question' name='ivoteRadio' type='radio' value='3' />
+                                        <div class='label'>All of the poo!</div>
+                                    </div>
+                                </form>
+                                <div class='clear'></div>
+                            </div>
+                            
+                            <div id='poll_answer_home_80' class='hide home_poll_answers'>
+                                 <div class='row'>
+                                            <div class='label'>0%</div>            
+                                            <div class='barWrapper'><span class='bar'>&nbsp;</span></div>
+                                            <div class='answer'>Watching the new show, Victorious!</div>
+                                 </div> 
+                                 <div class='row'>
+                                            <div class='label'>0%</div>            
+                                            <div class='barWrapper'><span class='bar'>&nbsp;</span></div>
+                                            <div class='answer'>Listening to the Victorious Theme Song! </div>
+                                 </div> 
+                                 <div class='row'>
+                                            <div class='label'>0%</div>            
+                                            <div class='barWrapper'><span class='bar'>&nbsp;</span></div>
+                                            <div class='answer'>Telling my friends about Victorious!</div>
+                                 </div> 
+                                 <div class='row'>
+                                            <div class='label'>0%</div>            
+                                            <div class='barWrapper'><span class='bar'>&nbsp;</span></div>
+                                            <div class='answer'>All of the poo!</div>
+                                 </div> 
+                            </div>
+                            </div>
+                          </div>
+                          <!-- clearing div here -->
+                          <div style='clear:both'></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- close poll css wrappers x4 )> -->
+                    <div id='home_poll_v2fc_bottom'>
+                      <a class='submit' id='poll_home_submit'></a>
+                    </div>
+                  </div>
+                  <!-- new w content )> -->
+                  <div id='elevator'>
+                    <object type='application/x-shockwave-flash' height='312' width='420' data='/images/43445_2573896254.swf'>
+  <param name='flashVars' value='siteRoot=&xmlPath=%2Felevator.xml' />
+  <param name='movie' value='/images/43445_2573896254.swf' />
+  <param name='quality' value='high' />
+  <param name='allowScriptAccess' value='always' />
+  <param name='allowFullScreen' value='true' />
+  <param name='wmode' value='transparent' />
+</object>
+                  </div>
+                </div>
+                <div class='right_column' id='home_promos'>
+                  <script type='text/javascript'>$(function(){$('.ufo').css('margin-top',55)})</script>
+                  <div class='pretty_item_box purple'>
+                    <div class='pretty_item_box_top'></div>
+                    <div class='pretty_item_box_content'>
+                      <div class='pretty_item_box_left_column'>
+                        <div class='pretty_item_box_title'>pee</div>
+                        We totally got nominated for a Kids' Choice Award! But it's up to you, our iCarly fans, if we win or not! So, go vote!!!
+                        <div class='pretty_item_box_link'>
+                          <div class='pretty_item_box_link_top'></div>
+                          <div class='pretty_item_box_link_content'>
+                            <a href='http://www.icarly.com/bumper.html?url=http%3A//www.nick.com/kids-choice-awards/vote/'>
+                              Go! Go! Go! Go!
+                            </a>
+                          </div>
+                          <div class='pretty_item_box_link_bottom'></div>
+                        </div>
+                  
+                      </div>
+                      <a href='http://www.icarly.com/bumper.html?url=http%3A//www.nick.com/kids-choice-awards/vote/'>
+                        <img src='/images/balls.png' width='145' height='105'/>
+                      </a>
+                      <div class='clear'><img src='/images/spacer.gif' width='1' height='1'/></div>
+                    </div>
+                    <div class='pretty_item_box_bottom'></div>
+                  </div>
+                  <div class='pretty_item_box pink'>
+                    <div class='pretty_item_box_top'></div>
+                    <div class='pretty_item_box_content'>
+                      <div class='pretty_item_box_left_column'>
+                        <div class='pretty_item_box_title'>poo</div>
+                        Meet Ginger Fox. She's a completely loony washed up pop star...And it's up to us to make her awesome again. It's hard work fixing a pop star! Check out all the pics in this week's iSnaps gallery!
+                        <div class='pretty_item_box_link'>
+                          <div class='pretty_item_box_link_top'></div>
+                          <div class='pretty_item_box_link_content'>
+                            <a href='/iSnaps/category3212.html'>
+                              See 'Em Now!
+                            </a>
+                          </div>
+                          <div class='pretty_item_box_link_bottom'></div>
+                        </div>
+                  
+                      </div>
+                      <a href='/iSnaps/category3212.html'>
+                        <img src='/images/balls.png' width='145' height='106'/>
+                      </a>
+                      <div class='clear'><img src='/images/spacer.gif' width='1' height='1'/></div>
+                    </div>
+                    <div class='pretty_item_box_bottom'></div>
+                  </div>
+                  <div class='pretty_item_box green'>
+                    <div class='pretty_item_box_top'></div>
+                    <div class='pretty_item_box_content'>
+                      <div class='pretty_item_box_left_column'>
+                        <div class='pretty_item_box_title'>what</div>
+                        Last week Spencer ACCIDENTALLY dated Gibby's mom and Sam's been LOL-ing ever since. So just to mess with Spencer, Sam's put Gibby's face on everything she could think of! 
+                        <div class='pretty_item_box_link'>
+                          <div class='pretty_item_box_link_top'></div>
+                          <div class='pretty_item_box_link_content'>
+                            <a href='/iBlogs/entry495.html'>
+                              See Her Pics!
+                            </a>
+                          </div>
+                          <div class='pretty_item_box_link_bottom'></div>
+                        </div>
+                  
+                      </div>
+                      <a href='/iBlogs/entry495.html'>
+                        <img src='/images/balls.png' width='145' height='107'/>
+                      </a>
+                      <div class='clear'><img src='/images/spacer.gif' width='1' height='1'/></div>
+                    </div>
+                    <div class='pretty_item_box_bottom'></div>
+                  </div>
+                </div>
+                <div class='left_column'>
+                  <a class='textus' href='/SendStuff/textus.html'>
+                    <img src='/images/26346_4049770959.gif' width='411' height='138'/>
+                  </a>
+                </div>
+                <div class='right_column' style='clear:right'>
+                  <img src='/images/50435_1598530726.gif' class='ufo' width='436' height='76'/>
+                </div>
+              </div>
+              <div class='clear'></div>
+            </div>
+          </div>
+        </div>
+        <div id='footer'>
+          <div id='dots'></div>
+            <p>
+              © fuck inc
+            </p>
+            <p>
+            <a href="/mkdecal">mkds decal tool</a> &bull; <a href="http://minecraftpocket.ml/">pocket</a> &bull; <a href="/google">google</a> &bull; <a href="/banjo">banjo</a>
+            </p>
+            <p>
+              Friends of iCarly:
+              <br />
+              <div id='footer_logos'>
+                <a href="http://typicalname.cf">
+	                <img src="http://typicalname.cf/webutton.png" alt="typicalname's site">
+                </a>
+                <a href="http://nick.com">
+	                <img src="/images/57921_3066658434.png" alt="nick.com sponge bob">
+                </a>
+              </div>
+                <a href='https://www.stat-counter.org/'>https://www.stat-counter.org/</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=2077ffd4a061e9696580c6ea48270f4604a8a7e2'></script>
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/606230/t/1"></script>
+        </div>
+      </div>
+    </div>
+    <script type='text/javascript'>
+      date_str('#date-str-1, #date-str-2');
+      date_quote('#quote-str-1, #quote-str-2');
+    </script>

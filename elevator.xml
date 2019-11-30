@@ -1,0 +1,41 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Elevator startFloor="1" basepath="">
+<floors>
+<floor thelevel="1" wallcolor="FFDB10" wallshadow="F4C018" thefun="/images/31958_2886795628.swf"></floor>
+<floor thelevel="2" wallcolor="EF4858" wallshadow="D83040" thefun="/images/31974_1965522533.swf"></floor>
+<floor thelevel="3" wallcolor="EF4858" wallshadow="D83040" thefun="/images/32040_3021058762.swf"></floor>
+</floors>
+
+<funsounds basepath="/">
+<sound path="/assets/1/audio/2009/03/24/62716_2862580389.mp3" />
+<sound path="/assets/1/audio/2009/03/24/62664_1260791033.mp3" />
+<sound path="/assets/1/audio/2009/03/24/62617_3675666673.mp3" />
+<sound path="/assets/1/audio/2009/03/24/62589_4061841431.mp3" />
+<sound path="/assets/1/audio/2009/03/24/62567_3097593067.mp3" />
+<sound path="/assets/1/audio/2009/03/24/62642_1380826504.mp3" />
+<sound path="/assets/1/audio/2009/03/24/62697_1018822884.mp3" />
+<sound path="/assets/1/audio/2009/03/24/62294_3971114877.mp3" />
+<sound path="/assets/1/audio/2009/03/24/62317_2602447448.mp3" />
+<sound path="/assets/1/audio/2009/03/24/62430_1459072344.mp3" />
+<sound path="/assets/1/audio/2009/03/24/62454_1172439797.mp3" />
+<sound path="/assets/1/audio/2009/03/24/62490_617894784.mp3" />
+<sound path="/assets/1/audio/2009/03/24/62506_2658482968.mp3" />
+<sound path="/assets/1/audio/2009/03/24/62383_2829303328.mp3" />
+<sound path="/assets/1/audio/2009/03/24/62405_2741190340.mp3" />
+<sound path="/assets/1/audio/2009/03/24/62356_173375163.mp3" />
+<sound path="/assets/1/audio/2009/03/24/62270_2326939084.mp3" />
+<sound path="/assets/1/audio/2009/03/24/62108_800827027.mp3" />
+<sound path="/assets/1/audio/2009/03/24/62130_3994878056.mp3" />
+<sound path="/assets/1/audio/2009/03/24/62156_3046033840.mp3" />
+<sound path="/assets/1/audio/2009/03/24/62181_4022948428.mp3" />
+<sound path="/assets/1/audio/2009/03/24/62209_3780271721.mp3" />
+<sound path="/assets/1/audio/2009/03/24/62228_3038985565.mp3" />
+<sound path="/assets/1/audio/2009/03/24/61877_949799018.mp3" />
+<sound path="/assets/1/audio/2009/03/24/61902_1448934812.mp3" />
+<sound path="/assets/1/audio/2009/03/24/61928_1695892121.mp3" />
+<sound path="/assets/1/audio/2009/03/24/61959_1538378988.mp3" />
+<sound path="/assets/1/audio/2009/03/24/62080_817812682.mp3" />
+</funsounds>
+ 
+</Elevator>
