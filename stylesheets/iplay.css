@@ -1,0 +1,536 @@
+#play {
+  background: white url('/images/47261_3915736890.gif') 0px 0px repeat-y; }
+  #play .you_are_here_left {
+    top: 45px;
+    left: 280px; }
+  #play #play_content {
+    padding: 50px 25px 25px 25px;
+    background-color: white;
+    height: 250px; }
+    #play #play_content #play_promotion_pic {
+      position: relative;
+      top: -270px;
+      left: 10px;
+      z-index: 1;
+      width: 320px;
+      height: 240px;
+      overflow: hidden;
+      z-index: 3; }
+      #play #play_content #play_promotion_pic img {
+        margin: 12px 0 0 13px; }
+      #play #play_content #play_promotion_pic a {
+        color: yellow;
+        position: absolute;
+        font-family: Comic Sans MS, cursive;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 0px 290px 185px 0px;
+        left: 10px;
+        top: 10px; }
+      #play #play_content #play_promotion_pic a:hover {
+        color: #b4ea19; }
+    #play #play_content #play_promotion {
+      height: 279px;
+      width: 820px;
+      background-image: url('/images/72260_2644706406.gif');
+      position: relative;
+      top: 0px;
+      z-index: 2; }
+      #play #play_content #play_promotion #play_promotion_copy {
+        color: white;
+        font-size: 14px;
+        padding: 43px 70px 0 345px;
+        text-align: center; }
+        #play #play_content #play_promotion #play_promotion_copy h4 {
+          font-family: Comic Sans MS, cursive;
+          font-size: 18px;
+          font-weight: bold; }
+      #play #play_content #play_promotion #arrow {
+        position: absolute;
+        left: 395px;
+        top: 195px;
+        height: 55px;
+        width: 410px; }
+        #play #play_content #play_promotion #arrow a {
+          color: yellow;
+          position: absolute;
+          font-family: Comic Sans MS, cursive;
+          font-size: 25px;
+          font-weight: bold;
+          padding: 6px 270px 10px 30px; }
+        #play #play_content #play_promotion #arrow a:hover {
+          color: #b4ea19;
+          text-decoration: underline; }
+  #play #play_bottom {
+    min-height: 550px;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 70px;
+    position: relative;
+    background-color: white;
+    background-image: url('/images/44741_3303681890.gif') !important;
+    background-position: -1px -325px !important;
+    background-repeat: repeat-y;
+    padding-bottom: 20px; }
+    #play #play_bottom #iplay_divider {
+      position: absolute;
+      background-image: url('/images/38178_1288130035.gif');
+      height: 68px;
+      width: 870px;
+      top: 0px;
+      left: 5px; }
+    #play #play_bottom #play_gallery {
+      margin: 25px; }
+      #play #play_bottom #play_gallery #play_more_stuff {
+        width: 337px;
+        height: 129px;
+        background-image: url('/images/72311_760540240.gif');
+        position: relative;
+        left: 25px;
+        z-index: 2; }
+      #play #play_bottom #play_gallery #play_galleries {
+        width: 442px;
+        height: 224px;
+        background-image: url('/images/72293_235721339.gif');
+        background-repeat: no-repeat;
+        position: relative;
+        top: -15px;
+        z-index: 1;
+        text-align: center; }
+        #play #play_bottom #play_gallery #play_galleries ul#snaps_nav_galleries {
+          padding: 0px;
+          padding-left: 55px !important;
+          margin: 0px;
+          margin-top: 10px; }
+          #play #play_bottom #play_gallery #play_galleries ul#snaps_nav_galleries li {
+            list-style: none;
+            float: left;
+            padding: 0px;
+            margin: 10px; }
+            #play #play_bottom #play_gallery #play_galleries ul#snaps_nav_galleries li a {
+              display: block;
+              height: 195px;
+              width: 168px;
+              margin-right: 5px;
+              background-image: url('/images/35400_2426031036.gif'); }
+              #play #play_bottom #play_gallery #play_galleries ul#snaps_nav_galleries li a img {
+                width: 110px;
+                height: 110px;
+                float: left;
+                margin: 25px 0px 15px 32px;
+                background: black url('/images/loading.gif') center center no-repeat; }
+              #play #play_bottom #play_gallery #play_galleries ul#snaps_nav_galleries li a span.snaps_gallery_link {
+                color: #ed1f8f;
+                font-size: 0.8em;
+                font-weight: bold;
+                float: left;
+                width: 100%; }
+            #play #play_bottom #play_gallery #play_galleries ul#snaps_nav_galleries li a:hover {
+              background-image: url('/images/35420_1526880767.gif'); }
+      #play #play_bottom #play_gallery #play_diagonals {
+        width: 164px;
+        height: 120px;
+        background-image: url('/images/72274_2864008240.gif');
+        position: relative;
+        top: -35px;
+        left: 50px;
+        z-index: 0; }
+      #play #play_bottom #play_gallery a#play_send_us {
+        display: block;
+        width: 277px;
+        height: 140px;
+        background-image: url('/images/72335_1691047861.gif');
+        position: relative;
+        top: -120px;
+        left: 70px;
+        z-index: 0; }
+      #play #play_bottom #play_gallery a#play_send_us:hover {
+        background-image: url('/images/72349_882679105.gif'); }
+    #play #play_bottom #play_fun_vault {
+      width: 351px;
+      height: 423px;
+      margin: 0 25px 25px 0;
+      font-family: Comic Sans MS, cursive; }
+      #play #play_bottom #play_fun_vault h3 {
+        background: url('/images/43148_3565211113.gif') right top no-repeat;
+        height: 77px;
+        margin-bottom: -20px; }
+        #play #play_bottom #play_fun_vault h3 span {
+          margin-left: -99999px;
+          font-size: 0; }
+      #play #play_bottom #play_fun_vault .content {
+        background: url('/images/43148_3565211113.gif') right bottom no-repeat;
+        padding: 0 20px 60px 30px; }
+        #play #play_bottom #play_fun_vault .content .game-summary-go a {
+          height: 50px;
+          width: 45px;
+          display: block;
+          float: left;
+          background: url('/images/45420_691295611.gif') left center no-repeat; }
+        #play #play_bottom #play_fun_vault .content .game-summary-div {
+          margin: 20px 0px 20px 0px;
+          clear: left; }
+          #play #play_bottom #play_fun_vault .content .game-summary-div a.game-summary-thumbnail {
+            height: 50px;
+            width: 70px;
+            border: 1px solid aqua;
+            float: left;
+            margin: 0px 8px; }
+          #play #play_bottom #play_fun_vault .content .game-summary-div .game-summary-caption {
+            display: table-cell;
+            height: 3em;
+            vertical-align: middle; }
+          #play #play_bottom #play_fun_vault .content .game-summary-div .game-summary-description {
+            display: none;
+            color: red;
+            font-weight: bold;
+            text-decoration: none; }
+  #play #fun_game_content {
+    padding: 50px 25px 25px 25px;
+    background-color: white;
+    height: 600px; }
+    #play #fun_game_content #fun_game_content_top {
+      background-image: url('/images/61224_2383009277.gif'); }
+    #play #fun_game_content #fun_game_content_bg {
+      background-image: url('/images/61198_715968127.gif');
+      height: 500px; }
+    #play #fun_game_content #fun_game_content_bottom {
+      background-image: url('/images/61321_393580385.gif'); }
+  #play #fun_box.right_column {
+    background-image: url('/images/47869_2345088842.gif');
+    width: 39px;
+    height: 203px;
+    margin-top: 70px; }
+  #play #promo_area {
+    position: relative; }
+    #play #promo_area .block {
+      height: 450px;
+      width: 500px; }
+    #play #promo_area #bent_flex_wrap {
+      position: absolute;
+      top: 82px;
+      left: 70px; }
+    #play #promo_area #ad_container {
+      background: url('/images/43319_1634998295.gif') top left no-repeat;
+      height: 214px;
+      position: absolute;
+      left: 22px;
+      top: 10px;
+      width: 239px;
+      z-index: 100; }
+      #play #promo_area #ad_container img, #play #promo_area #ad_container object {
+        margin-left: 40px;
+        margin-top: 25px; }
+      #play #promo_area #ad_container a {
+        display: block; }
+    #play #promo_area h3 {
+      background: url('/images/43604_2138266649.gif') top left no-repeat;
+      height: 104px;
+      left: 254px;
+      position: absolute;
+      top: -46px;
+      width: 284px; }
+      #play #promo_area h3 em {
+        margin-left: -5000px;
+        margin-top: -5000px; }
+    #play #promo_area div.pretty_item_box {
+      width: 432px; }
+      #play #promo_area div.pretty_item_box div.pretty_item_box_top {
+        background: url('/images/47139_2905746458.gif') right top no-repeat;
+        height: 166px; }
+      #play #promo_area div.pretty_item_box div.pretty_item_box_content {
+        background: url('/images/47139_2905746458.gif') right 90% no-repeat; }
+        #play #promo_area div.pretty_item_box div.pretty_item_box_content div.pretty_item_box_left_column {
+          width: 100%; }
+        #play #promo_area div.pretty_item_box div.pretty_item_box_content div.pretty_item_box_link {
+          width: 192px; }
+      #play #promo_area div.pretty_item_box div.pretty_item_box_bottom {
+        background: url('/images/47139_2905746458.gif') right bottom no-repeat;
+        height: 20px; }
+      #play #promo_area div.pretty_item_box a img {
+        position: absolute;
+        top: 19px;
+        left: 250px; }
+    #play #promo_area div.pretty_item_box.blue div.pretty_item_box_top {
+      background: url('/images/47179_837136216.gif') right top no-repeat; }
+    #play #promo_area div.pretty_item_box.blue div.pretty_item_box_content {
+      background: url('/images/47179_837136216.gif') right 90% no-repeat; }
+    #play #promo_area div.pretty_item_box.blue div.pretty_item_box_bottom {
+      background: url('/images/47179_837136216.gif') right bottom no-repeat; }
+    #play #promo_area div.pretty_item_box.red div.pretty_item_box_top {
+      background: url('/images/47205_1985869737.gif') right top no-repeat; }
+    #play #promo_area div.pretty_item_box.red div.pretty_item_box_content {
+      background: url('/images/47205_1985869737.gif') right 90% no-repeat; }
+    #play #promo_area div.pretty_item_box.red div.pretty_item_box_bottom {
+      background: url('/images/47205_1985869737.gif') right bottom no-repeat; }
+    #play #promo_area div.pretty_item_box.orange div.pretty_item_box_top {
+      background: url('/images/47221_1138296719.gif') right top no-repeat; }
+    #play #promo_area div.pretty_item_box.orange div.pretty_item_box_content {
+      background: url('/images/47221_1138296719.gif') right 90% no-repeat; }
+    #play #promo_area div.pretty_item_box.orange div.pretty_item_box_bottom {
+      background: url('/images/47221_1138296719.gif') right bottom no-repeat; }
+    #play #promo_area div.pretty_item_box.purple div.pretty_item_box_top {
+      background: url('/images/47238_1331274257.gif') right top no-repeat; }
+    #play #promo_area div.pretty_item_box.purple div.pretty_item_box_content {
+      background: url('/images/47238_1331274257.gif') right 90% no-repeat; }
+    #play #promo_area div.pretty_item_box.purple div.pretty_item_box_bottom {
+      background: url('/images/47238_1331274257.gif') right bottom no-repeat; }
+    #play #promo_area div.pretty_item_box.pink div.pretty_item_box_top {
+      background: url('/images/47261_1519603949.gif') right top no-repeat; }
+    #play #promo_area div.pretty_item_box.pink div.pretty_item_box_content {
+      background: url('/images/47261_1519603949.gif') right 90% no-repeat; }
+    #play #promo_area div.pretty_item_box.pink div.pretty_item_box_bottom {
+      background: url('/images/47261_1519603949.gif') right bottom no-repeat; }
+    #play #promo_area div.pretty_item_box.pink a img {
+      position: absolute;
+      top: 19px;
+      left: 250px; }
+  #play a#make_your_own_webshow {
+    position: absolute;
+    top: 475px;
+    left: 50px;
+    display: block;
+    width: 352px;
+    height: 139px;
+    background-image: url('/images/44092_487009095.png');
+    background-position: top; }
+    #play a#make_your_own_webshow:hover {
+      background-position: bottom; }
+
+#awesome_games {
+  color: #324580;
+  background-image: url('/images/41479_963553055.png'); }
+  #awesome_games h2, #awesome_games h3, #awesome_games .latest a, #awesome_games .more a.odd, #awesome_games .paginator, #awesome_games .more em, #awesome_games .paginator a, #awesome_games .latest em {
+    background-image: url('/images/41516_117799298.png'); }
+  #awesome_games .latest a {
+    color: #f31386; }
+  #awesome_games .more a {
+    color: #324580; }
+
+#awesome_games {
+  background-position: 22px 64px;
+  background-repeat: no-repeat;
+  position: relative;
+  font-size: 16px;
+  top: -50px;
+  height: 552px;
+  width: 900px; }
+  #awesome_games a {
+    position: relative; }
+    #awesome_games a:active {
+      top: 1px;
+      left: 1px; }
+  #awesome_games h2, #awesome_games h3, #awesome_games h4, #awesome_games h6 {
+    margin: 0;
+    padding: 0; }
+  #awesome_games h2 {
+    left: 24px;
+    height: 116px;
+    position: relative;
+    width: 232px;
+    text-indent: -200cm;
+    float: left; }
+  #awesome_games .latest {
+    clear: left;
+    float: left;
+    padding-left: 139px;
+    padding-right: 342px;
+    margin-top: 11px; }
+    #awesome_games .latest a {
+      display: inline-block;
+      height: 170px;
+      width: 180px;
+      background-position: 0 -218px;
+      float: left;
+      text-align: center;
+      margin-left: 17px;
+      margin-right: 11px;
+      margin-top: 2px;
+      margin-bottom: 8px; }
+    #awesome_games .latest h3 {
+      clear: left;
+      background-position: 0 -116px;
+      margin-left: 18px;
+      width: 380px;
+      height: 46px;
+      text-indent: -200cm; }
+    #awesome_games .latest img {
+      border: 3px solid #b2e7f2;
+      margin-top: 18px;
+      margin-left: 6px;
+      height: 93px;
+      border-radius: 1px;
+      -moz-border-radius: 1px;
+      -webkit-border-radius: 1px; }
+    #awesome_games .latest h4 {
+      font-size: 13px;
+      line-height: 14px;
+      font-family: Arial, sans-serif;
+      font-weight: normal;
+      position: absolute;
+      top: 20px;
+      left: 15px;
+      top: 132px;
+      text-align: left;
+      width: 98px; }
+    #awesome_games .latest em {
+      background-position: 0 -187px;
+      display: block;
+      position: absolute;
+      height: 19px;
+      width: 58px;
+      left: 112px;
+      top: 137px;
+      text-indent: -200cm; }
+    #awesome_games .latest a:hover em {
+      background-position: 0 -168px; }
+  #awesome_games .paginator {
+    position: absolute;
+    top: 497px;
+    left: 632px;
+    width: 192px;
+    height: 86px;
+    background-position: -247px -366px; }
+  #awesome_games #game_page_list {
+    position: relative;
+    top: 40px;
+    text-align: center; }
+    #awesome_games #game_page_list a {
+      display: inline-block;
+      position: relative;
+      float: left;
+      width: 18px;
+      height: 20px;
+      background-position: -199px -168px;
+      text-indent: -200cm; }
+    #awesome_games #game_page_list a.p0 {
+      background-position: -199px -168px; }
+    #awesome_games #game_page_list a.p1 {
+      background-position: -199px -188px; }
+    #awesome_games #game_page_list a.p2 {
+      background-position: -199px -208px; }
+    #awesome_games #game_page_list a.p3 {
+      background-position: -199px -228px; }
+    #awesome_games #game_page_list a.p4 {
+      background-position: -199px -248px; }
+    #awesome_games #game_page_list a.p5 {
+      background-position: -199px -268px; }
+    #awesome_games #game_page_list a.p6 {
+      background-position: -199px -288px; }
+    #awesome_games #game_page_list a.p7 {
+      background-position: -199px -308px; }
+    #awesome_games #game_page_list a.p8 {
+      background-position: -199px -328px; }
+    #awesome_games #game_page_list a.p9 {
+      background-position: -199px -348px; }
+    #awesome_games #game_page_list a.p10 {
+      background-position: -199px -368px; }
+    #awesome_games #game_page_list a.p11 {
+      background-position: -199px -388px; }
+    #awesome_games #game_page_list a.p0_active {
+      background-position: -181px -168px; }
+    #awesome_games #game_page_list a.p1_active {
+      background-position: -181px -188px; }
+    #awesome_games #game_page_list a.p2_active {
+      background-position: -181px -208px; }
+    #awesome_games #game_page_list a.p3_active {
+      background-position: -181px -228px; }
+    #awesome_games #game_page_list a.p4_active {
+      background-position: -181px -248px; }
+    #awesome_games #game_page_list a.p5_active {
+      background-position: -181px -268px; }
+    #awesome_games #game_page_list a.p6_active {
+      background-position: -181px -288px; }
+    #awesome_games #game_page_list a.p7_active {
+      background-position: -181px -308px; }
+    #awesome_games #game_page_list a.p8_active {
+      background-position: -181px -328px; }
+    #awesome_games #game_page_list a.p9_active {
+      background-position: -181px -348px; }
+    #awesome_games #game_page_list a.p10_active {
+      background-position: -181px -368px; }
+    #awesome_games #game_page_list a.p11_active {
+      background-position: -181px -388px; }
+  #awesome_games .more {
+    float: right;
+    position: absolute;
+    top: 64px;
+    left: 564px;
+    padding-left: 20px;
+    padding-top: 60px; }
+    #awesome_games .more em {
+      background-position: -482px -366px;
+      display: block;
+      height: 36px;
+      width: 41px;
+      float: left;
+      text-indent: -200cm; }
+    #awesome_games .more a {
+      display: block;
+      height: 36px; }
+    #awesome_games .more a:hover em {
+      background-position: -482px -403px; }
+    #awesome_games .more h6 {
+      font-size: 16px;
+      width: 194px;
+      float: right;
+      cursor: pointer;
+      position: relative;
+      top: 7px; }
+    #awesome_games .more .FontJazz-aachen {
+      top: 12px; }
+    #awesome_games .more h2 {
+      background-position: -522px 0;
+      position: absolute;
+      top: 49px;
+      height: 270px;
+      width: 35px;
+      left: 268px; }
+    #awesome_games .more h3 {
+      background-position: -390px -116px;
+      position: absolute;
+      top: 11px;
+      left: 4px;
+      width: 132px;
+      height: 22px;
+      text-indent: -200cm; }
+    #awesome_games .more .odd {
+      background-position: -248px 0; }
+    #awesome_games .more #more_game_pages, #awesome_games .more #game_page_slider {
+      position: relative;
+      width: 235px;
+      height: 400px; }
+    #awesome_games .more #game_page_slider {
+      left: 0; }
+    #awesome_games .more #more_game_pages {
+      overflow: hidden; }
+      #awesome_games .more #more_game_pages div {
+        display: block;
+        position: absolute; }
+        #awesome_games .more #more_game_pages div div div {
+          position: relative; }
+      #awesome_games .more #more_game_pages a {
+        display: block;
+        width: 235px; }
+
+#play .more_fun {
+  position: relative;
+  float: right;
+  width: 350px;
+  height: 364px;
+  top: -26px; }
+  #play .more_fun a#make_your_own_webshow {
+    top: 0;
+    left: 15px;
+    background-image: url('/images/41149_97734120.png');
+    height: 170px;
+    width: 273px; }
+  #play .more_fun .arrows {
+    background-position: -247px -165px;
+    background-image: url('/images/41516_117799298.png');
+    height: 190px;
+    width: 235px;
+    text-indent: -200cm;
+    position: absolute;
+    bottom: 0;
+    left: 0; }

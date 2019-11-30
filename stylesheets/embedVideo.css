@@ -1,0 +1,105 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  background-color: #FEFEBB; }
+
+a {
+  display: block; }
+
+#cont {
+  width: 450px;
+  height: 420px;
+  margin: 0px auto; }
+
+#embed-video-cont {
+  position: relative;
+  background: rgb(254,254,187) url('/images/49359_3043035976.gif') no-repeat scroll 0px 0px;
+  width: 450px;
+  height: 420px; }
+
+.header {
+  padding: 40px 30px 0px 30px; }
+
+.rel-wrapper {
+  position: relative;
+  z-index: 2; }
+
+#clickImg, #clickImg2 {
+  position: absolute;
+  top: 8px;
+  left: 330px;
+  height: 50px;
+  width: 99px;
+  background: transparent url('/images/49755_1010290715.gif') no-repeat scroll top right; }
+  #clickImg a, #clickImg2 a {
+    text-decoration: none;
+    height: 50px;
+    width: 99px;
+    background-image: url('/images/49755_1010290715.gif');
+    background-position: top right;
+    background-repeat: no-repeat; }
+
+#close-btn2 {
+  top: 100px; }
+
+
+#close-btn {
+  position: absolute;
+  top: 9px;
+  left: 356px;
+  width: 84px;
+  height: 30px;
+  background: transparent url('/images/52280_2865230977.gif') no-repeat scroll 0px 0px; }
+  #close-btn a {
+    width: 84px;
+    height: 30px;
+    text-decoration: none;
+    background: transparent url('/images/52280_2865230977.gif') no-repeat scroll 0px 0px; }
+
+p.caption {
+  width: 360px;
+  color: white;
+  font-size: 12px;
+  font-family: geneva, arial, sans-serif;
+  margin: 9px 50px; }
+
+.embed-tag-cont {
+  position: relative;
+  padding: 0px 10px; }
+
+img.embed-label {
+  display: block;
+  margin: 4px 0px 4px 42px; }
+
+.textarea-wrapper {
+  height: 100px;
+  margin: 0px 80px 0px 40px;
+  background: transparent url('/images/49546_806835778.png') no-repeat bottom left;
+  padding-bottom: 10px; }
+
+.text-area-left {
+  padding: 0 0 0 28px;
+  background: transparent url('/images/49546_806835778.png') no-repeat top left; }
+
+
+textarea {
+  background: none;
+  border: none;
+  overflow: hidden;
+  color: rgb(0,0,0);
+  display: block;
+  width: 90%;
+  margin: 0;
+  padding: 6px;
+  font-size: 12px;
+  height: 90px; }
+
+.page-link-cont {
+  padding: 0 10px;
+  margin-top: 8px; }
+  .page-link-cont .textarea-wrapper {
+    height: 50px; }
+    .page-link-cont .textarea-wrapper textarea {
+      height: 40px; }

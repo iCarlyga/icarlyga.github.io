@@ -1,0 +1,18 @@
+#broken_content {
+  width: 853px;
+  height: 565px;
+  background: white url('/images/54179_1109264756.png') top left no-repeat;
+  margin-left: 15px; }
+  #broken_content #broken_container {
+    position: absolute;
+    top: 200px;
+    left: 40px; }
+  #broken_content a#broken_home_link {
+    display: block;
+    height: 63px;
+    width: 227px;
+    background-image: url('/images/57902_1845239843.gif');
+    position: absolute;
+    top: 450px;
+    left: 600px;
+    z-index: 2; }

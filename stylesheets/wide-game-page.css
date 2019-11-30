@@ -1,0 +1,81 @@
+/* make game page fit a 950 x 600 game template */
+
+
+#frame {
+    width: 999px; /* 905px */
+    margin-left: -500px /* -462px */
+}
+
+    #frame div#content_frame, #play #fun_game_frame, #play {
+        width: 999px;   /* 880px */
+        background-color: transparent;
+    }
+    #topadbg, #sideadbg, #header, #header_right, #frame ul#top_nav, #frame #content_frame, #frame #footer {
+        margin-left: 54px;   
+    }
+
+#adblockfix {
+    
+    right: 159px /* 120px */  
+}
+
+a#back_to_iplay {
+    
+    top: 90px;    /* 160px */   
+    left: -65px;   /* -63px */
+}
+
+#iplay_divider {
+    margin-left: 59px;  
+}
+
+
+#play {
+    background-position: 53px 0
+
+}
+
+    #play #fun_game_frame {
+        height: 640px;
+        padding-top: 76px;
+        padding-left: 22px;
+        background-image: url(/images/iplay-wide-bg.png);
+        background-repeat: no-repeat;
+        background-position: 0 -35px;
+    }
+    
+    #play #fun_game_frame #fun_game_content {
+        height: 640px;
+        background-image: none;
+    }
+    
+    #play #fun_game_frame #fun_game_bottom, #play #fun_game_frame #fun_game_top {
+        background-image: none;
+        background-color: transparent;
+    }
+    
+
+#fun_stuff {
+    display: none;
+}
+
+#fun_game_btns {
+    left: 374px;
+    top: -30px;   
+}
+
+#fun_game_btns .send {
+    background-position: -20px -20px ;
+    height: 35px;
+    width: 185px;
+}
+    #fun_game_btns .send #send_game {
+        margin-left: 0;
+        
+    }
+        #fun_game_btns .send #send_game a {
+            margin-top: 0;
+        }
+    #fun_game_btns .send #embed_game {
+        display: none;
+    }

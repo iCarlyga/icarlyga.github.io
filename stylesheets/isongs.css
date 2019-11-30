@@ -1,0 +1,257 @@
+#songs_content {
+  width: 880px;
+  height: 917px;
+  margin-left: 0px;
+  background: white; }
+  #songs_content .you_are_here_left {
+    top: 49px;
+    left: 390px; }
+
+#songs_blue_box {
+  display: block;
+  height: 354px;
+  width: 485px;
+  background-image: url('/images/55761_3383549857.gif');
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 93px;
+  left: 47px; }
+
+html > body #songs_blue_arrow {
+  display: block;
+  height: 445px;
+  width: 115px;
+  background-image: url('/images/55851_1378675881.png');
+  position: absolute;
+  top: 222px;
+  left: -5px;
+  z-index: 1; }
+
+#songs_content #songs_green_box {
+  display: block;
+  height: 271px;
+  width: 315px;
+  background-image: url('/images/55778_909347109.gif');
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 102px;
+  left: 547px; }
+#songs_content #box_ad_frame {
+  display: block;
+  height: 250px;
+  width: 300px;
+  position: absolute;
+  top: 14px;
+  left: 8px; }
+#songs_content #songs_blue_box_mini {
+  display: block;
+  height: 135px;
+  width: 317px;
+  background-image: url('/images/55794_3607286687.gif');
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 380px;
+  left: 545px; }
+#songs_content #songs_blue_box_mini_list {
+  display: block;
+  height: 112px;
+  width: 302px;
+  position: absolute;
+  overflow: auto;
+  top: 394px;
+  left: 560px;
+  scrollbar-3dlight-color: #ed1f8f;
+  scrollbar-arrow-color: yellow;
+  scrollbar-base-color: #ed1f8f;
+  scrollbar-darkshadow-color: #b10060;
+  scrollbar-face-color: #ed1f8f;
+  scrollbar-highlight-color: #fefaa5;
+  scrollbar-shadow-color: #b10060; }
+#songs_content a#mini_list_link {
+  margin-bottom: 5px;
+  display: block;
+  height: 24px;
+  width: 273px;
+  position: top;
+  background-image: url('/images/55828_783520324.gif');
+  background-repeat: no-repeat;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 26px;
+  color: #4c6199; }
+#songs_content a#mini_list_link.active {
+  background-image: url('/images/55901_3814084298.png');
+  color: #feffb0; }
+#songs_content #songs_yellow_box_top {
+  display: block;
+  height: 80px;
+  width: 880px;
+  background-image: url('/images/55640_1603249637.gif');
+  position: absolute;
+  top: 517px;
+  left: 1px; }
+#songs_content a#caption_header {
+  margin-top: 13px;
+  margin-left: 185px;
+  display: block;
+  height: 37px;
+  width: 260px;
+  cursor: pointer; }
+#songs_content a#time_header {
+  margin-top: -32px;
+  margin-left: 487px;
+  display: block;
+  height: 30px;
+  width: 62px;
+  cursor: pointer; }
+#songs_content a#artist_header {
+  margin-top: -30px;
+  margin-left: 655px;
+  display: block;
+  height: 30px;
+  width: 120px;
+  cursor: pointer; }
+#songs_content a.sort_up {
+  background: transparent url('/images/56347_2156267484.gif') no-repeat scroll right 12px; }
+#songs_content a.sort_down {
+  background: transparent url('/images/56366_285652046.gif') no-repeat scroll right 12px; }
+#songs_content a#songs_yellow_box_song_caption {
+  margin-top: 13px;
+  margin-left: 185px;
+  display: block;
+  height: 37px;
+  width: 75px;
+  background-image: url('/images/56567_1319517010.gif') no-repeat; }
+#songs_content a#songs_yellow_box_time_caption {
+  margin-top: -23px;
+  margin-left: 487px;
+  display: block;
+  height: 23px;
+  width: 39px;
+  background-image: url('/images/56592_342103424.gif') no-repeat; }
+#songs_content a#songs_yellow_box_artist_caption {
+  margin-top: -23px;
+  margin-left: 655px;
+  display: block;
+  height: 23px;
+  width: 46px;
+  background-image: url('/images/56617_1945808647.gif') no-repeat; }
+#songs_content #songs_yellow_box_song_arrow_down {
+  margin-left: 240px;
+  margin-top: 12px; }
+#songs_content #songs_yellow_box_song_arrow_up {
+  margin-left: 240px;
+  margin-top: 12px; }
+#songs_content #songs_yellow_box_time_arrow_down {
+  margin-left: 43px;
+  margin-top: 4px; }
+#songs_content #songs_yellow_box_time_arrow_up {
+  margin-left: 43px;
+  margin-top: 3px; }
+#songs_content #songs_yellow_box_artist_arrow_down {
+  margin-left: 104px;
+  margin-top: 4px; }
+#songs_content #songs_yellow_box_artist_arrow_up {
+  margin-left: 104px;
+  margin-top: 3px; }
+#songs_content #songs_yellow_box_header {
+  display: block;
+  height: 70px;
+  width: 880px;
+  background-image: url('/images/55662_924009180.gif');
+  position: absolute;
+  top: 597px;
+  left: 1px; }
+#songs_content #songs_yellow_box_background {
+  display: block;
+  height: 321px;
+  width: 744px;
+  background-image: url('/images/55744_662576386.gif');
+  position: absolute;
+  top: 659px;
+  left: 50px; }
+#songs_content #songs_yellow_box_left {
+  display: block;
+  height: 315px;
+  width: 52px;
+  background-image: url('/images/55704_2041806012.gif');
+  position: absolute;
+  top: 667px;
+  left: 1px; }
+#songs_content #songs_yellow_box_right {
+  display: block;
+  height: 315px;
+  width: 88px;
+  background-image: url('/images/55726_1874380678.gif');
+  position: absolute;
+  top: 666px;
+  left: 793px; }
+#songs_content #songs_yellow_box_list {
+  overflow: auto;
+  height: 302px;
+  width: 735px;
+  top: 8px;
+  left: 8px;
+  position: absolute; }
+#songs_content #songs_yellow_box_list_table {
+  width: 720px;
+  background-color: #fbfb7d; }
+#songs_content a#songs_yellow_box_earphone {
+  margin-top: 5px;
+  display: block;
+  height: 15px;
+  width: 14px;
+  background-image: url('/images/57038_2331518719.gif');
+  background-repeat: no-repeat; }
+#songs_content a#songs_link {
+  position: top;
+  font-size: 13px;
+  color: #84448a; }
+#songs_content #songs_title {
+  position: top;
+  font-size: 13px;
+  color: #84448a; }
+#songs_content a#songs_yellow_box_button_play {
+  display: block;
+  height: 17px;
+  width: 35px;
+  background-image: url('/images/55883_4046032547.gif'); }
+#songs_content a#songs_yellow_box_play_arrow {
+  margin-top: 0px;
+  margin-left: 10px;
+  display: block;
+  height: 13px;
+  width: 15px;
+  background-image: url('/images/55869_3736786763.gif'); }
+#songs_content #songs_yellow_box_fother {
+  display: block;
+  height: 22px;
+  width: 880px;
+  background-image: url('/images/55687_3378090460.gif');
+  position: absolute;
+  top: 980px;
+  left: 1px; }
+
+#songs_content .remote_container {
+  position: absolute;
+  top: 457px;
+  left: 30px;
+  z-index: 10; }
+
+#music_core {
+  height: 1px;
+  width: 1px; }
+
+#coverflow_container {
+  position: relative;
+  left: 62px;
+  top: 74px;
+  height: 298px;
+  width: 453px;
+  z-index: 5; }
+
+#songs_content tr.active a#songs_yellow_box_button_play {
+  cursor: default;
+  background-image: url('/images/55869_3736786763.gif');
+  background-position: center center;
+  background-repeat: no-repeat; }

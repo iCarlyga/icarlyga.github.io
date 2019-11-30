@@ -1,0 +1,242 @@
+#play {
+  background: white url('/images/47261_3915736890.gif') 0px 0px repeat-y;
+  background-position: -1px 0;
+  padding-bottom: 50px; }
+  #play .you_are_here_left {
+    top: 45px;
+    left: 280px; }
+  #play #play_content {
+    padding: 50px 25px 25px 25px;
+    background-color: white;
+    height: 250px; }
+    #play #play_content #play_promotion_pic {
+      position: relative;
+      top: -270px;
+      left: 10px;
+      z-index: 1;
+      width: 320px;
+      height: 240px;
+      overflow: hidden; }
+      #play #play_content #play_promotion_pic img {
+        margin: 12px 0 0 13px; }
+    #play #play_content #play_promotion {
+      height: 280px;
+      width: 820px;
+      background-image: url('/images/72260_2644706406.gif');
+      position: relative;
+      top: 0px;
+      z-index: 2; }
+      #play #play_content #play_promotion #play_promotion_copy {
+        color: #FFF;
+        font-size: 14px;
+        padding: 43px 70px 0 345px;
+        text-align: center; }
+        #play #play_content #play_promotion #play_promotion_copy h4 {
+          font-family: Comic Sans MS, cursive;
+          font-size: 18px;
+          font-weight: bold; }
+        #play #play_content #play_promotion #play_promotion_copy a {
+          color: #FFFF00;
+          position: relative;
+          font-family: Comic Sans MS, cursive;
+          font-size: 25px;
+          font-weight: bold;
+          top: 36px;
+          left: -68px; }
+        #play #play_content #play_promotion #play_promotion_copy a:hover {
+          color: #B4EA19;
+          text-decoration: underline; }
+  #play #play_bottom {
+    height: 550px;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 70px;
+    position: relative; }
+    #play #play_bottom #iplay_divider {
+      position: absolute;
+      background-image: url('/images/38178_1288130035.gif');
+      height: 68px;
+      width: 870px;
+      top: 0px;
+      left: 6px; }
+    #play #play_bottom #play_gallery {
+      margin: 25px; }
+      #play #play_bottom #play_gallery #play_more_stuff {
+        width: 337px;
+        height: 129px;
+        background-image: url('/images/72311_760540240.gif');
+        position: relative;
+        left: 25px;
+        z-index: 2; }
+      #play #play_bottom #play_gallery #play_galleries {
+        width: 442px;
+        height: 224px;
+        background-image: url('/images/72293_235721339.gif');
+        background-repeat: no-repeat;
+        position: relative;
+        top: -15px;
+        z-index: 1;
+        text-align: center; }
+        #play #play_bottom #play_gallery #play_galleries ul#snaps_nav_galleries {
+          padding-right: 0;
+          padding-top: 0;
+          padding-bottom: 0;
+          padding-left: 55px;
+          margin: 0px;
+          margin-top: 10px; }
+          #play #play_bottom #play_gallery #play_galleries ul#snaps_nav_galleries li {
+            list-style: none;
+            float: left;
+            padding: 0px;
+            margin: 10px; }
+            #play #play_bottom #play_gallery #play_galleries ul#snaps_nav_galleries li a {
+              display: block;
+              height: 195px;
+              width: 168px;
+              margin-right: 5px;
+              background-image: url('/images/35400_2426031036.gif'); }
+              #play #play_bottom #play_gallery #play_galleries ul#snaps_nav_galleries li a img {
+                width: 110px;
+                height: 110px;
+                float: left;
+                margin: 25px 0px 15px 32px; }
+              #play #play_bottom #play_gallery #play_galleries ul#snaps_nav_galleries li a span.snaps_gallery_link {
+                color: #ED1F8F;
+                font-size: 0.8em;
+                font-weight: bold;
+                float: left;
+                width: 100%; }
+            #play #play_bottom #play_gallery #play_galleries ul#snaps_nav_galleries li a:hover {
+              background-image: url('/images/35420_1526880767.gif'); }
+      #play #play_bottom #play_gallery #play_diagonals {
+        width: 164px;
+        height: 120px;
+        background-image: url('/images/72274_2864008240.gif');
+        position: relative;
+        top: -35px;
+        left: 50px;
+        z-index: 0; }
+      #play #play_bottom #play_gallery a#play_send_us {
+        display: block;
+        width: 277px;
+        height: 140px;
+        background-image: url('/images/72335_1691047861.gif');
+        position: relative;
+        top: -120px;
+        left: 70px;
+        z-index: 0; }
+      #play #play_bottom #play_gallery a#play_send_us:hover {
+        background-image: url('/images/72349_882679105.gif'); }
+    #play #play_bottom #play_fun_vault {
+      width: 345px;
+      height: 423px;
+      margin: 25px;
+      margin-left: 0px;
+      background-image: url('/images/42739_2965927843.gif');
+      font-family: Comic Sans MS, cursive; }
+      #play #play_bottom #play_fun_vault #game_summaries_frame {
+        margin: 70px 20px 0px 35px; }
+        #play #play_bottom #play_fun_vault #game_summaries_frame .game-summary-go {
+          height: 20px;
+          width: 39px;
+          float: left;
+          background-image: url('/images/45420_691295611.gif'); }
+        #play #play_bottom #play_fun_vault #game_summaries_frame .game-summary-div {
+          margin: 20px 0px 20px 0px;
+          clear: left; }
+          #play #play_bottom #play_fun_vault #game_summaries_frame .game-summary-div a.game-summary-thumbnail {
+            height: 50px;
+            width: 70px;
+            border: 1px solid #0FF;
+            float: left;
+            margin: 0px 8px; }
+          #play #play_bottom #play_fun_vault #game_summaries_frame .game-summary-div .game-summary-caption {
+            color: #FF0000;
+            font-weight: bold;
+            text-decoration: none; }
+  #play #fun_game_frame {
+    padding: 50px 96px 25px 93px;
+    background-color: white;
+    height: 500px;
+    width: 690px; }
+    #play #fun_game_frame #fun_game_top {
+      background-color: blue;
+      background-image: url('/images/61224_2383009277.gif');
+      height: 25px;
+      width: 690px; }
+    #play #fun_game_frame #fun_game_content {
+      background-image: url('/images/62998_4096742290.gif');
+      height: 450px;
+      width: 690px; }
+      #play #fun_game_frame #fun_game_content object {
+        margin-left: 45px;
+        margin-top: 15px; }
+    #play #fun_game_frame #fun_game_bottom {
+      background-image: url('/images/42879_62949186.gif');
+      height: 46px;
+      width: 690px; }
+  #play #fun_box.right_column {
+    background-image: url('/images/47869_2345088842.gif');
+    width: 39px;
+    height: 203px;
+    margin-top: 70px; }
+
+a#back_to_iplay {
+  display: block;
+  position: absolute;
+  background-image: url('/images/59598_1519340729.gif');
+  background-position: top;
+  height: 120px;
+  width: 173px;
+  top: 160px;
+  left: -24px; }
+  a#back_to_iplay:hover {
+    background-position: bottom; }
+
+#fun_stuff {
+  display: block;
+  position: absolute;
+  background-image: url('/images/61161_1213676908.gif');
+  height: 331px;
+  width: 42px;
+  top: 171px;
+  right: 65px; }
+
+#iplay_divider {
+  display: block;
+  background-image: url('/images/38178_1288130035.gif');
+  height: 68px;
+  width: 870px;
+  margin-left: 5px; }
+
+#fun_game_btns {
+  height: 51px;
+  position: relative;
+  top: -40px;
+  left: 140px;
+  width: 233px; }
+  #fun_game_btns div {
+    height: 100%; }
+  #fun_game_btns .send {
+    background: url('/images/48670_4273863175.png') top left no-repeat;
+    width: 425px;
+    float: left; }
+    #fun_game_btns .send #send_game {
+      margin-left: 20px;
+      height: 31px;
+      width: 185px; }
+    #fun_game_btns .send #embed_game {
+      margin-top: -51px;
+      margin-left: 225px;
+      height: 31px;
+      width: 180px; }
+  #fun_game_btns .embed {
+    background: url('/images/48670_4273863175.png') top right no-repeat;
+    width: 28px;
+    float: right; }
+  #fun_game_btns span {
+    margin-left: -200cm; }
+  #fun_game_btns a {
+    display: block;
+    height: 30px;
+    margin-top: 20px; }
