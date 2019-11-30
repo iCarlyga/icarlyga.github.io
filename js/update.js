@@ -21,7 +21,7 @@ var flashUpdate = function() {
   flashUpdate.vars = {
     title: '<strong>Freddie\'s update center</strong><br>\n',
     close_btn: '<a class="right_column" href="javascript:closeMsg()">close</a>',
-    no_flash: 'hey, you don\'t have flash player. also if you see retard dog, reload the page. you\'re missing out on a lot of iCarly.ga<br>\n',
+    no_flash: 'hey, you don\'t have flash player you\'re missing out on a lot of iCarly.ga<br>\n',
     old_flash1: 'hey, you need to update from flash player ',
     old_flash2: ' to see everything on iCarly.ga<br>\n',
     install: 'click here to get the latest flash player for '  
