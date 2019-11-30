@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang='en-US' xml:lang='en-US' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+    <title></title>
+    <link href='/stylesheets/embedVideo.css' rel='stylesheet' type='text/css' />
+    <script language='javscript' src='/js/embedPopup.js' type='text/javascript'></script>
+    <script language='javascript' type='text/javascript'>
+        window.onload = function()
+        {
+        
+            var embedTagSetter = new EmbedTagSetter({
+                'path':'/iframes/video.html',
+                'linkpath':'/iVideo/index.html',
+                'height': 520,
+                'width': 370,
+                'textareaHTMLID':'embed-tag',
+                'linktextareaHTMLID':'link-tag',
+                'buttonHTMLID':'clickImg',
+                'button2HTMLID':'clickImg2',
+                'closeButtonHTMLID':'close-btn'
+                
+            });
+            var videoId = embedTagSetter.getVideoId();
+            embedTagSetter.setTextArea(videoId);
+            embedTagSetter.setLink(videoId);
+        }
+    </script>
+  </head>
+  <body>
+    <div id='cont'>
+      <div id='embed-video-cont'>
+        <div id='close-btn'>
+          <a href='#'>
+            &nbsp;
+          </a>
+        </div>
+        <div class='header'>
+          <!-- do you want text image -->
+          <img src='/images/51966_498076290.gif' width='386' height='88'/>
+        </div>
+        <div class='content'>
+          <p class='caption'>
+            Copy the code below and paste it into your website or blog to embed it
+          </p>
+          <div class='embed-tag-cont'>
+            <!-- embed label text image -->
+            <img src='/images/53165_3274934419.gif' class='embed-label' width='152' height='16'/>
+            <div class='rel-wrapper'>
+              <div id='clickImg'>
+                <a href='#' id='clickImgA'>
+                  &nbsp;
+                </a>
+              </div>
+            </div>
+            <div class='textarea-wrapper'>
+              <div class='text-area-left'>
+                <div class='text-area-right'>
+                  <div class='text-area-content'>
+                    <form name='embed' onsubmit='return false;'>
+                      <textarea id='embed-tag' name='tag'></textarea>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='page-link-cont'>
+            <!-- page link text image -->
+            <img src='/images/49847_1188837387.png' class='embed-label' width='82' height='19'/>
+            <div class='rel-wrapper'>
+              <div id='clickImg2'>
+                <a href='#' id='clickImgA2'>
+                  &nbsp;
+                </a>
+              </div>
+            </div>
+            <div class='textarea-wrapper'>
+              <div class='text-area-left'>
+                <form name='link' onsubmit='return false;'>
+                  <textarea id='link-tag' name='url'></textarea>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
