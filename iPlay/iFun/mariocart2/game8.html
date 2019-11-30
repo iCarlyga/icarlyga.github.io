@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iCarly.ga</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
+    <meta name="apple-itunes-app" content="app-id=1451380171"/>
+    <meta name="description" content="briangriffen.tk 2: electric boogaloo">
+    <meta name="image" content="/images/icarly.png">
+    <meta name="og:image" content="/images/icarly.png">
+    <meta content='text/html;charset=UTF-8' http-equiv='content-type' />
+    <meta content='iCarly.com' http-equiv='description' />
+    <meta content='iCarly.com' http-equiv='keywords' />
+    <link href='/stylesheets/style.css' media='screen' rel='stylesheet' type='text/css' />
+    <link href='/stylesheets/sifr.css' media='screen' rel='stylesheet' type='text/css' />
+    <link href='/stylesheets/ifun.css' media='screen' rel='stylesheet' type='text/css'/>
+    <link href='/icon/favicon.ico' rel='shortcut icon' type='image/x-icon'/>
+    <script src='/js/jquery.js' type='text/javascript'></script>
+    <script src='/js/jquery.browser.js' type='text/javascript'></script>
+    <script src='/js/findOS.js' type='text/javascript'></script>
+    <script src='/js/update.js' type='text/javascript'></script>
+    <script src='/js/site.js' type='text/javascript'></script>
+    <script src='/js/sifr.js' type='text/javascript'></script>
+    <script src='/js/sifr-config.js' type='text/javascript'></script>
+    <script src='/js/gameReport.js' type='text/javascript'></script>
+    <script src='/js/coda.js' type='text/javascript'></script>
+    <script src='/js/coda_config.js' type='text/javascript'></script>
+    <script src='/js/init.js' type='text/javascript'></script>
+    <script type="text/javascript" src="/js/icarly_anr.js"></script>
+    <script type="text/javascript">
+    bumper_if_no_ad_cookie();
+    	var pageName=location.pathname;    
+    	var account_info = "nickvia,viaicarly"; 
+    
+        if (window.location.href.indexOf("review.") != -1) 
+          account_info = "nickviadev"; 
+        com.mtvi.reporting.Account={ 
+          name: account_info, 
+          dynamicAccountSelection: false, 
+          linkInternalFilters: 'javascript:', 
+          trackExternalLinks: true, 
+          trackDownloadLinks: true 
+        }; 
+        
+        var dispatcher=new com.mtvi.reporting.Dispatcher(); 
+        com.mtvi.config.qs=com.mtvi.util.queryStringToHash(window.location.search); 
+        dispatcher.setDefaultData(); 
+        dispatcher.setAttribute("pageName","icarly"+location.pathname); 
+        dispatcher.setAttribute("channel","icarly");
+        dispatcher.setAttribute("hier1","icarly"+location.pathname); 
+        dispatcher.setAttribute("prop4",prop4);
+        dispatcher.setAttribute("prop21",prop21);    
+        com.mtvi.ads.AdManager.setDartSite("icarly.nol"); 
+        com.mtvi.ads.AdManager.setDefaultSections(location.pathname); 
+        com.mtvi.ads.AdManager.setPositionThreshold(2); 
+        
+       if(contentType=='game')
+       	{
+       		dispatcher.setAttribute("prop4","icarly-"+prop4);
+       	}
+        
+        else if (contentType=='gallery')
+       	{
+        		dispatcher.setAttribute("prop22",pageName);
+      	}	
+        dispatcher.sendCall();
+        
+    function gamePlay(){
+    	dispatcher.setAttribute("pageName",pageName+"-playAgain");
+    	dispatcher.sendCall();
+    	}
+    	
+    function audio(audioName){
+    	var prop21=audioName;
+    	dispatcher.setAttribute("pageName",pageName+"-"+prop21);
+    	dispatcher.sendCall();
+    	}
+    </script>
+    <script src='/js/printTracking.js' type='text/javascript'></script>
+  </head>
+  <body>
+    <div id='update_msg'></div>
+    <div id='frame'>
+      <div id='topadbg'>
+        <div id="top-ad">
+          <script language="JavaScript" type="text/javascript">
+            var vPair = "!category=ica;";
+            if (com.mtvi.config.qs.testmode)
+              vPair += "testmode="+com.mtvi.config.qs.testmode+";";
+            com.mtvi.ads.AdManager.placeAd({size:"728x90", keyValues:vPair});
+        </script>
+        </div>
+      </div>
+      <div id='sideadbg'>
+        <div id="side-ad">
+          <script language="JavaScript" type="text/javascript">
+            var vPair="!category=ica;";
+            if (com.mtvi.config.qs.testmode)
+              vPair += "testmode="+com.mtvi.config.qs.testmode+";";
+            com.mtvi.ads.AdManager.placeAd({size:" 160x600", keyValues:vPair});
+          </script>
+        </div>
+      </div>
+      <div id='adblockfix'></div>
+      <div id='header'>
+        <div id='loginbutton'>
+          <a class='login' href='javascript:login.show()'></a>
+        </div>
+        <div id='header_left'>
+          <div id='logo'>
+            <object type='application/x-shockwave-flash' height='168' width='520' data='/images/logo.swf'>
+  <param name='flashVars' value='siteRoot=' />
+  <param name='movie' value='/images/logo.swf' />
+  <param name='quality' value='high' />
+  <param name='allowScriptAccess' value='always' />
+  <param name='allowFullScreen' value='true' />
+  <param name='wmode' value='transparent' />
+</object>
+          </div>
+          <div id='header_info'>
+            <div id='date'>
+              <div class='shadowed'>
+                Today is
+                <span id='date-str-1'></span>
+              </div>
+              <div class='shadow'>
+                Today is
+                <span id='date-str-2'></span>
+              </div>
+            </div>
+            <div id='tagline'>
+              <div class='shadowed'>
+                <span class='open_quote'></span>
+                <span id='quote-str-1'>im stuff!!</span>
+                <span class='close_quote'></span>
+              </div>
+              <div class='shadow'>
+                <span class='open_quote'></span>
+                <span id='quote-str-2'>im stuff!!</span>
+                <span class='close_quote'></span>
+              </div>
+            </div>
+          </div>
+          <div id='search'>
+            <form action='https://google.com/search' enctype='text/form-data' id='searchform' method='GET'>
+              <input id='search_terms' name='q' type='text' />
+              <input class='submit' id='searchsubmit' type='submit' value='' />
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id='header_right'>
+        <div id='header_about'>
+          <a href='/about/index.html'></a>
+        </div>
+        <div id='header_animation'>
+          <img src='/images/51485_4022792467.gif' width='276' height='236'/>
+        </div>
+        <div id='your_name'></div>
+        <div id='header_feedback'>
+          <a href='/SendStuff/textus.html'></a>
+        </div>
+      </div>
+      <div id='inner_frame_ad'>
+        <ul id='top_nav'>
+          <li id='top_nav_blogs'>
+            <a href='/iBlogs/index.html'></a>
+          </li>
+          <li id='top_nav_snaps'>
+            <a href='/iSnaps/index.html'></a>
+          </li>
+          <li id='top_nav_news'>
+            <a href='/iNews/index.html'></a>
+          </li>
+          <li id='top_nav_video'>
+            <a href='/iVideo/index.html'></a>
+          </li>
+          <li id='top_nav_play'>
+            <a href='/iPlay/index.html'></a>
+          </li>
+          <li id='top_nav_songs'>
+            <a href='/iSongs/index.html'></a>
+          </li>
+          <li id='top_nav_help'>
+            <a href='/Help/index.html'></a>
+          </li>
+          <li id='top_nav_send'>
+            <a href='/SendStuff/index.html'></a>
+          </li>
+        </ul>
+        <div id='content_frame'>
+          <div class='orangeburst' id='content'>
+            <script src='/js/5min/fun_page_all_games.js' type='text/javascript'></script>
+            <script src='/js/popupForEmbed.js' type='text/javascript'></script>
+            <script src='/js/popSend.js' type='text/javascript'></script>
+            <script src='/js/igame.js' type='text/javascript'></script>
+            <div id='play'>
+              <div id='fun_game_frame'>
+                <div id='fun_game_top'></div>
+                <div id='fun_game_content'>
+                  <object type='application/x-shockwave-flash' height='400' width='600' data='mario-cart-2.swf'>
+  <param name='flashVars' value='siteRoot=' />
+  <param name='movie' value='mario-cart-2.swf' />
+  <param name='quality' value='high' />
+  <param name='allowScriptAccess' value='always' />
+  <param name='allowFullScreen' value='true' />
+  <param name='wmode' value='transparent' />
+</object>
+                </div>
+                <div id='fun_game_bottom'></div>
+                <div id='fun_game_btns'>
+                  <div class='send'>
+                    <div id='send_game'>
+                      <a href='javascript:popSend.setGame()'>
+                        <span>Send This Game to a Friend</span>
+                      </a>
+                    </div>
+                    <div id='embed_game'>
+                      <a href='javascript:embedthis()'>
+                        <span>Embed Game</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href='/iPlay/index.html' id='back_to_iplay'></a>
+              <div id='fun_stuff'></div>
+              <div id='iplay_divider'></div>
+            </div>
+            <script type='text/javascript'>
+              function center_game(){
+              if ($('#play object').width() > 0)
+              $('#play object').css('margin-left',
+              ((690 - $('#play object').width())/2)+'px')
+              else setTimeout('center_game()', 200)}
+              $(function() {center_game()})
+            </script>
+          </div>
+        </div>
+        <div id='footer'>
+          <div id='dots'></div>
+            <p>
+              © fuck inc
+            </p>
+            <p>
+            <a href="/mkdecal">mkds decal tool</a> &bull; <a href="http://minecraftpocket.ml/">pocket</a> &bull; <a href="/google">google</a> &bull; <a href="/banjo">banjo</a>
+            </p>
+            <p>
+              if you are a stinky mobile user, or typicalname, <a href="old.php">click here</a>
+            </p>
+        </div>
