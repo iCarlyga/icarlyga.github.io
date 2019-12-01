@@ -10,7 +10,7 @@
     <resize>true</resize>
     <externalResizeMethod>resizePlayer</externalResizeMethod>
     <!-- feed link -->
-    <feed>/videoxml/inews_feed_20120417132500.xml</feed>
+    <feed>/videoxml/ivideo_feed_20110209214500.xml</feed>
     <config>
       <playerSettings>
         <adBumperIn></adBumperIn>
