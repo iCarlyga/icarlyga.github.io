@@ -1,6 +1,5 @@
 // update.js
-// 11/17/2009 - fixed logic error that kept asking windows 98 users to update when they have flash 9
-// 10/29/2009 - minimum was set to flash 10
+// fixed glitch that kept asking windows 98 users to update above flash 9.
 
 var flashUpdate = function() {
   
@@ -21,15 +20,17 @@ var flashUpdate = function() {
   flashUpdate.vars = {
     title: '<strong>Freddie\'s update center</strong><br>\n',
     close_btn: '<a class="right_column" href="javascript:closeMsg()">close</a>',
-    no_flash: 'hey, you don\'t have flash player you\'re missing out on a lot of iCarly.ga<br>\n',
+    no_flash: 'hey, you don\'t have flash player. you\'re missing out on a lot of iCarly.ga<br>\n',
     old_flash1: 'hey, you need to update from flash player ',
     old_flash2: ' to see everything on iCarly.ga<br>\n',
-    install: 'click here to get the latest flash player for '  
+    install: 'click here to get the latest flash player for ',
+    mobile: 'You are using a mobile device without flash.<br>' + 
+            'Click <a href="/m/">here</a> to go to iCarly.ga mobile.' 
   }
      
   var flash_version = parseInt(getFlashVersion())
   
-  if (flash_version < 10)
+  if (flash_version < 9)
   {
     findOS.init()
     var os = findOS.name
@@ -50,10 +51,12 @@ var flashUpdate = function() {
           install_url = 'https://get.adobe.com/flashplayer/'
       } else {
         if (os_version >= 5.0)
-          install_url = 'https://get.adobe.com/flashplayer/'
+          install_url = 'https://get.adobe.com/flashplayer/
         else if (os_version > 0)
           install_url = 'https://get.adobe.com/flashplayer/'
       }
+    } else if ((os == 'iphone')||(os == 'mobile')) { 
+        updateMsg(flashUpdate.vars.mobile)
     }
     
     if (install_url.length > 0) {
@@ -70,6 +73,7 @@ var flashUpdate = function() {
         
       str += '<a href="'+install_url+'">' + flashUpdate.vars.install +
           os + ' ' + browser_name + '</a>'
+      
       updateMsg(str)
     }
   }
@@ -112,7 +116,7 @@ function updateMsg(message){
   // Display any text or html message in a special alert on the top of the page
   message += flashUpdate.vars.close_btn
   $('#update_msg').hide().html('<div>'+message+'</div>').slideDown(500)
-  //if (window.scrollTo) window.scrollTo(0, 0)
+  if (window.scrollTo) window.scrollTo(0, 0)
 }
 
 function closeMsg(){
