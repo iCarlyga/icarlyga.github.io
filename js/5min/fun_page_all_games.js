@@ -159,5 +159,12 @@ var ALL_GAMES = {
   page_url: '/iPlay/iFun/tacko/game23.html',
   iframe_url: '/iPlay/iFun/SamsPingPongJuvieEscape/game10775_iframe.html',
   thumbnail: '/images/balls.png'
+},
+24: {
+  caption: 'Random Dancing',
+  description: 'Ok',
+  page_url: '/iPlay/iFun/dancing/game24.html',
+  iframe_url: '/iPlay/iFun/SamsPingPongJuvieEscape/game10775_iframe.html',
+  thumbnail: '/images/balls.png'
 }
 };
