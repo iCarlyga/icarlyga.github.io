@@ -1,0 +1,214 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>
+      iCarly.ga
+    </title>
+    <meta charset='utf-8' />
+    <meta content='minimum-scale=1.0, maximum-scale=1.0, width=device-width' name='viewport' />
+    <link href='/stylesheets/mobile.css' rel='stylesheet' />
+    <script src='/js/jquery.js'></script>
+    <script src='/js/mobile.js'></script>
+  </head>
+  <body class='cartoon'>
+    <header>
+      <h1>
+        <a href='/m/'>
+          iCarly.com mobile
+        </a>
+      </h1>
+      <blockquote>
+        Peanut Butter Love
+      </blockquote>
+      <img src='/images/m/header-bg.png' width='320' />
+      <div class='cast'>Gibby, Spencer, Carly, Freddie, and Sam</div>
+      <nav>
+        <a href='/m/iblogs'>iBlogs</a>
+        <a href='/m/isnaps'>iSnaps</a>
+        <a href='/m/ivideo'>iVideo</a>
+        <a href='/m/isongs'>iSongs</a>
+      </nav>
+    </header>
+    <article class='isongs'>
+      <section id='loading'>
+        <h3>Loading Ajax....</h3>
+      </section>
+      <section class='active' id='archives'>
+        <div class='nav'>
+          <a class='songs' href='#archives'>all songs</a>
+          <a class='albums' href='#archives'>albums</a>
+        </div>
+        <div class='songs'>
+          <h3>Album Title</h3>
+          <a href='#id'>
+            <img src='/images/balls.png' />
+            <strong>
+              Title
+            </strong>
+            Artist
+            <em>duration</em>
+            <span class='button glyph-right'></span>
+          </a>
+          <h3>Album Title</h3>
+          <a href='#id'>
+            <img src='/images/balls.png' />
+            <strong>
+              Title
+            </strong>
+            Artist
+            <em>duration</em>
+            <span class='button glyph-right'></span>
+          </a>
+        </div>
+      </section>
+      <section id='songs'>
+        <div class='primary'>
+          <div class='player'>
+            <audio controls='controls' src='http://www.icarly.com/assets/1/audio/2009/11/05/59935_3180341016.mp3'></audio>
+          </div>
+          <div class='description'>
+            <strong>
+              Title
+              <em>duration</em>
+            </strong>
+            Artist
+          </div>
+        </div>
+        <div class='secondary'>
+          <ul>
+            <li>
+              <a href='#id'>
+                <img src='/images/m/songs/thumbnail.jpg' />
+                <strong>
+                  Title
+                </strong>
+                Artist
+                <em>duration</em>
+                <span class='button glyph-right'></span>
+              </a>
+            </li>
+          </ul>
+          <a class='button glyph-right' href='#archives'>
+            see all songs
+          </a>
+        </div>
+      </section>
+      <script src='/js/all_songs.js'></script>
+    </article>
+    <script>
+         
+            
+          $(function(){            
+              var config = {
+                  archive: '#archive',
+                  archive_content: '#archives div.songs',
+                  songs_tab: '#archives a.songs', 
+                  albums_tab: '#archives a.albums', 
+                  album_headers: '#archives h3',
+                  archive_tabs: '#archive .nav a'
+              }
+              //get album data  
+              $.albums = {};
+              $.each(ALL_SONGS, function(id,meta){
+                  ALL_SONGS[id].id = parseInt(id,10);
+                  if (!$.albums[meta.album]) {
+                      $.albums[meta.album] = [];
+                  }
+                  $.albums[meta.album].push(ALL_SONGS[id]);
+              });
+              //populate archive
+              var archive = $(config.archive_content).empty()
+              $.each($.albums, function(album,songs){
+                  archive.append('<h3>'+album+'</h3>');
+                  var href;
+                  $.each(songs,function(index,song){
+                      href = navigator.userAgent.match(/firefox|android/i)? song.file_path: '#' + song.id;
+                      archive.append('<a href="'+href+'">' +
+                              '<img src="'+song.album_image_url+'"/>' +
+                              $.format_song(song.title,song.artist,song.length) +
+                              '<span class="button glyph-right"></span>' +
+                      '</a>');
+                  });
+              });
+              $.model = $.albums
+              //load song player
+              $(document).bind('load_asset',function(e,data){
+                  $.log('loading icarly asset: ' + data.id);
+                  $(window).trigger('scroll_top');
+                  $('section:not(#songs)').addClass('inactive').removeClass('active');
+                  $('#songs').addClass('active').removeClass('inactive').slideInFromSide();
+                  var song = ALL_SONGS[data.id];        
+                  var audio = $('#songs audio');
+                  audio.attr('src',song.file_path).trigger('load').trigger('play');
+                  $('#songs .description').html($.format_song(song.title,song.artist,song.length));
+                  var songs = $('#archives.albums').length?
+                      $.albums[song.album]:
+                      ALL_SONGS;
+                  //load cover image
+                  var cover = $('<img src=' + song.album_image_url + ' />');
+                  $('#songs .player').prepend(cover.hide().fadeIn()).find('img:not(:first)').remove();
+                  
+                  var playlist = '';
+                  $.each(songs,function(key,song){
+                      playlist += '<li><a href="#'+song.id+'"> ' +
+                              '<img src="'+song.album_image_url+'"/>' +
+                               $.format_song(song.title, song.artist, song.length) +
+                              '<span class="button glyph-right"></span>' +                
+                      '</a></li>';
+                  });
+                  $('#songs ul:first').html(playlist);
+                  var file_path = song.file_path;
+              });
+              $('#songs .player audio').live('play', function(){
+                  $('#songs .player').addClass('playing');
+              }).live('pause', function(){
+                  $('#songs .player').removeClass('playing');
+              });
+              $('#songs ul a, #archives .songs a').live('click', function(){
+                  setTimeout(function(){
+                      $('#songs audio').trigger('play');
+                  }, 500);
+              });
+              $('#songs .player img').live('click', function(){
+                  var audio = $('#songs audio');
+                  if (audio.length && audio[0].paused) {
+                      $('#songs .player').removeClass('playing')
+                  }
+                  if ($('#songs .player').hasClass('playing')) {
+                      audio.trigger('pause');
+                  } else {
+                      audio.trigger('play');
+                  }                     
+              }).css('cursor', 'pointer');
+          }); //end song page script
+    </script>
+    <footer>
+      <a href="/terms/privacypolicy.html">
+      <b>
+      Privacy Policy/Your California Privacy Rights Updated 3/18/11
+      </b>
+      </a>
+      <a href='/terms/termsandconditions.html'>
+        Please Read Our Terms of Use
+      </a>
+      <a href='/terms/copyrightcompliance.html'>
+        Copyright Compliance Policy
+      </a>
+      <a href='/terms/safety.html'>
+        Safety Guide
+      </a>
+      ©2011 Viacom International Inc. All Rights Reserved
+      <h4>Friends of iCarly:</h4>
+      <div class='logos'>
+        <img src='/assets/1/image/2009/03/31/71008_3111973705.gif' width='69' height='26'/>
+        <a href='http://www.splashface.com/'>
+          <img src='/assets/1/image/2009/03/31/70889_3623639243.gif' width='92' height='38'/>
+        </a>
+        <a href='http://www.nick.com/common/bumpers/fullpage/icarly.jhtml?destination=http://www.nick.com' rel='external'>
+          <img src='/assets/1/image/2009/03/31/70859_1306697130.gif' width='106' height='28'/>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
