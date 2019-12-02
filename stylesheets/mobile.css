@@ -67,10 +67,10 @@ body {
       color: white;
       display: none; }
       body > header blockquote:before {
-        content: "â€œ";
+        content: open-quote;
         color: #dd3020; }
       body > header blockquote:after {
-        content: "â€";
+        content: close-quote;
         color: #dd3020; }
   body section, body > header, body article {
     background-color: white;
@@ -323,15 +323,15 @@ header .cast {
   -webkit-background-size: 100% auto;
   background-size: 100% auto; }
   header .cast.random0 {
-    background: url(/images/m/head-carly.jpg); }
+    background: url(/images/m/head-group.jpg); }
   header .cast.random1 {
-    background: url(/images/m/head-freddie.jpg); }
+    background: url(/images/m/head-group.jpg); }
   header .cast.random2 {
-    background: url(/images/m/head-gibby.jpg); }
+    background: url(/images/m/head-group.jpg); }
   header .cast.random3 {
-    background: url(/images/m/head-sam.jpg); }
+    background: url(/images/m/head-group.jpg); }
   header .cast.random4 {
-    background: url(/images/m/head-spencer.jpg); }
+    background: url(/images/m/head-group.jpg); }
 
 .home header .cast {
   background: url(/images/m/head-group.jpg); }
