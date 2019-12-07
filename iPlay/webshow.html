@@ -1,0 +1,472 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>iCarly.ga</title>
+    <meta content='text/html;charset=UTF-8' http-equiv='content-type' />
+    <meta content='iCarly.com' http-equiv='description' />
+    <meta content='iCarly.com' http-equiv='keywords' />
+    <!--[if lte IE 7]> 
+      <link href='/stylesheets/ie.css' media='screen' rel='stylesheet' type='text/css' />
+    <![endif]-->
+    <link href='/stylesheets/style.css' media='screen' rel='stylesheet' type='text/css' />
+    <link href='/stylesheets/sifr.css' media='screen' rel='stylesheet' type='text/css' />
+    <link href='/stylesheets/webshow.css' media='screen' rel='stylesheet' type='text/css'/>
+    <link href='/icon/favicon.ico' rel='shortcut icon' type='image/x-icon'/>
+    <script type='text/javascript'>
+      var contentType = '';
+      var prop4 = '';
+      var prop21 = '';
+      var prop22 = '';
+    </script>
+    <script src='/js/site.js' type='text/javascript'></script>
+    <script src='/js/jquery.js' type='text/javascript'></script>
+    <script src='/js/jquery.browser.js' type='text/javascript'></script>
+    <script src='/js/findOS.js' type='text/javascript'></script>
+    <script src='/js/update.js' type='text/javascript'></script>
+    <script src='/js/login.js' type='text/javascript'></script>
+    <script src='/js/sifr.js' type='text/javascript'></script>
+    <script src='/js/sifr-config.js' type='text/javascript'></script>
+    <script src='/js/gameReport.js' type='text/javascript'></script>
+    <script src='/js/init.js' type='text/javascript'></script>
+    <script type="text/javascript" src="/js/icarly_anr.js"></script>
+    <script type="text/javascript">
+    bumper_if_no_ad_cookie();
+    	var pageName=location.pathname;    
+    	var account_info = "nickvia,viaicarly"; 
+    
+        if (window.location.href.indexOf("review.") != -1) 
+          account_info = "nickviadev"; 
+        com.mtvi.reporting.Account={ 
+          name: account_info, 
+          dynamicAccountSelection: false, 
+          linkInternalFilters: 'javascript:', 
+          trackExternalLinks: true, 
+          trackDownloadLinks: true 
+        }; 
+        
+        var dispatcher=new com.mtvi.reporting.Dispatcher(); 
+        com.mtvi.config.qs=com.mtvi.util.queryStringToHash(window.location.search); 
+        dispatcher.setDefaultData(); 
+        dispatcher.setAttribute("pageName","icarly"+location.pathname); 
+        dispatcher.setAttribute("channel","icarly");
+        dispatcher.setAttribute("hier1","icarly"+location.pathname); 
+        dispatcher.setAttribute("prop4",prop4);
+        dispatcher.setAttribute("prop21",prop21);    
+        com.mtvi.ads.AdManager.setDartSite("icarly.nol"); 
+        com.mtvi.ads.AdManager.setDefaultSections(location.pathname); 
+        com.mtvi.ads.AdManager.setPositionThreshold(2); 
+        
+       if(contentType=='game')
+       	{
+       		dispatcher.setAttribute("prop4","icarly-"+prop4);
+       	}
+        
+        else if (contentType=='gallery')
+       	{
+        		dispatcher.setAttribute("prop22",pageName);
+      	}	
+        dispatcher.sendCall();
+        
+    function gamePlay(){
+    	dispatcher.setAttribute("pageName",pageName+"-playAgain");
+    	dispatcher.sendCall();
+    	}
+    	
+    function audio(audioName){
+    	var prop21=audioName;
+    	dispatcher.setAttribute("pageName",pageName+"-"+prop21);
+    	dispatcher.sendCall();
+    	}
+    </script>
+    <script src='/js/printTracking.js' type='text/javascript'></script>
+  </head>
+  <body>
+    <div id='update_msg'></div>
+    <div id='frame'>
+      <div id='topadbg'>
+        <div id="top-ad">
+          <script language="JavaScript" type="text/javascript">
+            var vPair = "!category=ica;";
+            if (com.mtvi.config.qs.testmode)
+              vPair += "testmode="+com.mtvi.config.qs.testmode+";";
+            com.mtvi.ads.AdManager.placeAd({size:"728x90", keyValues:vPair});
+        </script>
+        </div>
+      </div>
+      <div id='sideadbg'>
+        <div id="side-ad">
+          <script language="JavaScript" type="text/javascript">
+            var vPair="!category=ica;";
+            if (com.mtvi.config.qs.testmode)
+              vPair += "testmode="+com.mtvi.config.qs.testmode+";";
+            com.mtvi.ads.AdManager.placeAd({size:" 160x600", keyValues:vPair});
+          </script>
+        </div>
+      </div>
+      <div id='adblockfix'></div>
+      <div id='header'>
+        <div id='loginbutton'>
+          <a class='login' href='javascript:login.show()'></a>
+        </div>
+        <div id='header_left'>
+          <div id='logo'>
+            <object type='application/x-shockwave-flash' height='168' width='520' data='/assets/1/video/2009/03/24/57288_414752180.swf'>
+  <param name='flashVars' value='siteRoot=' />
+  <param name='movie' value='/assets/1/video/2009/03/24/57288_414752180.swf' />
+  <param name='quality' value='high' />
+  <param name='allowScriptAccess' value='always' />
+  <param name='allowFullScreen' value='true' />
+  <param name='wmode' value='transparent' />
+</object>
+          </div>
+          <div id='header_info'>
+            <div id='date'>
+              <div class='shadowed'>
+                Today is
+                <span id='date-str-1'></span>
+              </div>
+              <div class='shadow'>
+                Today is
+                <span id='date-str-2'></span>
+              </div>
+            </div>
+            <div id='tagline'>
+              <div class='shadowed'>
+                <span class='open_quote'></span>
+                <span id='quote-str-1'></span>
+                <span class='close_quote'></span>
+              </div>
+              <div class='shadow'>
+                <span class='open_quote'></span>
+                <span id='quote-str-2'></span>
+                <span class='close_quote'></span>
+              </div>
+            </div>
+          </div>
+          <div id='search'>
+            <form action='/Search/index.html' enctype='text/form-data' id='searchform' method='GET'>
+              <input id='search_terms' name='q' type='text' />
+              <input class='submit' id='searchsubmit' type='submit' value='' />
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id='header_right'>
+        <div id='header_about'>
+          <a href='/about/index.html'></a>
+        </div>
+        <div id='header_animation'>
+          <img src='/assets/1/image/2009/03/20/51485_4022792467.gif' width='276' height='236'/>
+        </div>
+        <div id='your_name'></div>
+        <div id='header_feedback'>
+          <a href='/SendStuff/textus.html'></a>
+        </div>
+      </div>
+      <div id='inner_frame_ad'>
+        <ul id='top_nav'>
+          <li id='top_nav_blogs'>
+            <a href='/iBlogs/index.html'></a>
+          </li>
+          <li id='top_nav_snaps'>
+            <a href='/iSnaps/index.html'></a>
+          </li>
+          <li id='top_nav_news'>
+            <a href='/iNews/index.html'></a>
+          </li>
+          <li id='top_nav_video'>
+            <a href='/iVideo/index.html'></a>
+          </li>
+          <li id='top_nav_play'>
+            <a href='/iPlay/index.html'></a>
+          </li>
+          <li id='top_nav_songs'>
+            <a href='/iSongs/index.html'></a>
+          </li>
+          <li id='top_nav_help'>
+            <a href='/Help/index.html'></a>
+          </li>
+          <li id='top_nav_send'>
+            <a href='/SendStuff/index.html'></a>
+          </li>
+        </ul>
+        <div id='content_frame'>
+          <div class='orangeburst' id='content'>
+            <script src='/js/5min/video_page_all_channels.js' type='text/javascript'></script>
+            <script src='/js/polls_and_ratings/data.js' type='text/javascript'></script>
+            <script language='javascript' src='/js/ratingSubmit.js' type='text/javascript'></script>
+            <!-- / standalone code for video player to talk to vote slider -->
+            <script language='javascript' src='/js/setVoteForVideo.js' type='text/javascript'></script>
+            <script language='javascript' src='/js/ratingsHandler.js' type='text/javascript'></script>
+            <!-- / ratingSubmit contig script -->
+            <script language='javascript' src='/js/configWebshow.js' type='text/javascript'></script>
+            <div id='make-cont-wrapper'>
+              <div id='make-cont'>
+                <!-- 
+                  absolutely positioned images
+                -->
+                <!-- main title image -->
+                <img src='/assets/1/image/2009/07/08/56832_3128305912.png' width='521' height='146' id='make-your-title'/>
+                <!-- film clipper image -->
+                <img src='/assets/1/image/2009/07/08/56400_2534957211.png' width='253' height='317' id='how-to-make-film-clipper'/>
+                <!-- video camera image -->
+                <img src='/assets/1/image/2009/07/08/56900_851882972.png' width='263' height='214' id='video-camera'/>
+                <!-- left arrow -->
+                <img src='/assets/1/image/2009/07/08/56551_2937087495.png' width='123' height='134' id='arrow-left'/>
+                <!-- right arrow -->
+                <img src='/assets/1/image/2009/07/08/56263_2417790397.png' width='117' height='136' id='arrow-right'/>
+                <div id='main-content'>
+                  <div id='video-player-cont'>
+                    <!-- secondary title -->
+                    <img src='/assets/1/image/2009/07/08/56666_3679401536.png' width='366' height='134' id='main-subtitle'/>
+                    <div id='videos_player_container'>
+                      <object type='application/x-shockwave-flash' id='player' height='332' width='504' data='/flash/loader_world.swf'>
+  <param name='flashVars' value='siteRoot=&playerKind=multi&clickAVideo=%2Fassets%2F2%2Fimage%2F2009%2F04%2F30%2F80911_1166308083.jpg&whatWaitFor=%2Fassets%2F2%2Fimage%2F2009%2F04%2F30%2F80879_3913798038.jpg&fullScreen=%2Fassets%2F1%2Fimage%2F2009%2F05%2F20%2F51390_1828720990.png&loadingWord=%2Fassets%2F1%2Fimage%2F2009%2F07%2F02%2F63972_1646033434.png&overlay=%2Fassets%2F1%2Fimage%2F2009%2F07%2F09%2F65449_2154334687.jpg&loadUrl=%2Fassets%2F1%2Fvideo%2F2009%2F07%2F09%2F49784_689922605.swf&playerConfig=%2Fvideoxml%2Fwebshow_20100413102000.xml' />
+  <param name='movie' value='/flash/loader_world.swf' />
+  <param name='quality' value='high' />
+  <param name='allowScriptAccess' value='always' />
+  <param name='allowFullScreen' value='true' />
+  <param name='wmode' value='transparent' />
+</object>
+                    </div>
+                    <div id='videos_upload_signup'></div>
+                  </div>
+                  <div id='play-selector-cont'>
+                    <div id='selector-header'>
+                      <div id='selector-title'>
+                        <!-- selector title -->
+                        <img src='/assets/1/image/2009/07/08/56620_1077486682.png' width='373' height='90'/>
+                      </div>
+                      <div id='vote-slider-cont'>
+                        <object type='application/x-shockwave-flash' id='slider' height='100' width='220' data='/flash/vote_slider.swf'>
+  <param name='flashVars' value='siteRoot=&voteUrl=%2Fassets%2F1%2Fimage%2F2009%2F06%2F22%2F63641_1981210363.png&titleUrl=%2Fassets%2F1%2Fimage%2F2009%2F06%2F22%2F63515_297162529.png&thanksUrl=%2Fassets%2F1%2Fimage%2F2009%2F06%2F22%2F63681_3529490145.png' />
+  <param name='movie' value='/flash/vote_slider.swf' />
+  <param name='quality' value='high' />
+  <param name='allowScriptAccess' value='always' />
+  <param name='allowFullScreen' value='true' />
+  <param name='wmode' value='transparent' />
+</object>
+                        <div class='clear'></div>
+                      </div>
+                      <div class='clear'></div>
+                    </div>
+                    <!-- 
+                      close header
+                    -->
+                    <!-- side selector image -->
+                    <img src='/assets/1/image/2009/07/08/56452_3478519333.gif' width='42' height='352' id='side-selector-title'/>
+                    <div id='selector-div'>
+                      <!-- secondary title -->
+                      <img src='/assets/1/image/2009/07/08/56778_1312815003.png' width='677' height='58' id='selector-subtitle'/>
+                      <div id='selector-div-content'>
+                        <table id='selector-clips'>
+                          <tr>
+                             <td>
+                               <a href='javascript:playWebshowClip(1749)'>
+                               <img src='/assets/1/image/2009/04/30/import_001086.jpg' class='videos_playlist_thumbnail' width='70' height='48'/>
+                               <div class='videos_playlist_item_description'>
+                                 Listen and Learn!&#10;Freddie teaches you all about Audio! Follow his advice and make your web show sound amazing!
+                                 <div id='ratingDiv1749' class='videos_playlist_item_rating'>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                 </div>
+                               </div>
+                               <div class='clear'></div>
+                               </a>
+                             </td>
+                             <td>
+                               <a href='javascript:playWebshowClip(1739)'>
+                               <img src='/assets/1/image/2009/04/30/import_001076.jpg' class='videos_playlist_thumbnail' width='70' height='48'/>
+                               <div class='videos_playlist_item_description'>
+                                 Pick a Theme, Any Theme&#10;Carly and Sam teach you another way to make your web show awesome -- just like theirs!
+                                 <div id='ratingDiv1739' class='videos_playlist_item_rating'>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                 </div>
+                               </div>
+                               <div class='clear'></div>
+                               </a>
+                             </td>
+                          </tr>
+                          <tr>
+                             <td>
+                               <a href='javascript:playWebshowClip(1596)'>
+                               <img src='/assets/1/image/2009/04/30/import_000933.jpg' class='videos_playlist_thumbnail' width='70' height='48'/>
+                               <div class='videos_playlist_item_description'>
+                                 Lights, Camera, Action!&#10;Sam and Freddie teach you how to light your video so we can use it on iCarly!
+                                 <div id='ratingDiv1596' class='videos_playlist_item_rating'>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                 </div>
+                               </div>
+                               <div class='clear'></div>
+                               </a>
+                             </td>
+                             <td>
+                               <a href='javascript:playWebshowClip(1562)'>
+                               <img src='/assets/1/image/2009/04/30/import_000899.jpg' class='videos_playlist_thumbnail' width='70' height='48'/>
+                               <div class='videos_playlist_item_description'>
+                                 Picking Your Friends&#10;How to pick your web show co-stars.
+                                 <div id='ratingDiv1562' class='videos_playlist_item_rating'>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                 </div>
+                               </div>
+                               <div class='clear'></div>
+                               </a>
+                             </td>
+                          </tr>
+                          <tr>
+                             <td>
+                               <a href='javascript:playWebshowClip(1584)'>
+                               <img src='/assets/1/image/2009/04/30/import_000921.jpg' class='videos_playlist_thumbnail' width='70' height='48'/>
+                               <div class='videos_playlist_item_description'>
+                                 Practice Makes Perfect!&#10;Rehearse your web show so that you don't look like a doof!!
+                                 <div id='ratingDiv1584' class='videos_playlist_item_rating'>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                 </div>
+                               </div>
+                               <div class='clear'></div>
+                               </a>
+                             </td>
+                             <td>
+                               <a href='javascript:playWebshowClip(1554)'>
+                               <img src='/assets/1/image/2009/04/30/import_000891.jpg' class='videos_playlist_thumbnail' width='70' height='48'/>
+                               <div class='videos_playlist_item_description'>
+                                 Being Prepared.&#10;Before you shoot your web show, you gotta have a plan!
+                                 <div id='ratingDiv1554' class='videos_playlist_item_rating'>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                  <img src='/assets/1/image/2009/03/26/28928_1600580155.gif' width='14' height='14'/>
+                                 </div>
+                               </div>
+                               <div class='clear'></div>
+                               </a>
+                             </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <div class='clear'></div>
+                  </div>
+                  <!-- 
+                    close main-content
+                  -->
+                </div>
+                <!-- 
+                  close main-content-wrapper
+                -->
+                <div id='send-us-button'>
+                  <a href='/SendStuff/index.html'>
+                    <!-- send us stuff image -->
+                    <img src='/assets/1/image/2009/07/08/56716_1227123661.png' width='288' height='143'/>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- 
+              close make-cont
+            -->
+          </div>
+        </div>
+        <div id='footer'>
+          <div id='dots'></div>
+          <p>
+            <a href='/terms/privacypolicy.html'>Privacy Policy/Your California Privacy Rights</a>
+            <br />
+            <a href='/terms/termsandconditions.html'>Please Read Our Terms of Use</a>
+            <br />
+            <a href='/terms/copyrightcompliance.html'>Copyright Compliance Policy</a>
+            <br />
+            <a href='/terms/safety.html'>Safety Guide</a>
+            <br />
+            ©2010 Viacom International Inc. All Rights Reserved
+            <p></p>
+            Friends of iCarly:
+            <br />
+            <footer_logos>
+              <img src='/assets/1/image/2009/05/08/75840_4223888697.gif' width='99' height='32'/>
+              <a href='http://www.splashface.com/' target='_blank'>
+                <img src='/assets/1/image/2009/03/31/70889_3623639243.gif' width='92' height='38'/>
+              </a>
+              <a href='http://www.nick.com/common/bumpers/fullpage/icarly.jhtml?destination=http://www.nick.com' target='_blank'>
+                <img src='/assets/1/image/2009/10/06/57921_3066658434.png' width='106' height='28'/>
+              </a>
+            </footer_logos>
+          </p>
+        </div>
+        <div class='modal' id='login_modal'>
+          <div class='header'>
+            <a class='register' href='/registration/index.html'>
+              <span>Need to register? click here</span>
+            </a>
+            <a class='close' href='javascript:login.hide()'>
+              <span>close</span>
+            </a>
+          </div>
+          <div class='content'>
+            <form action='/404.html' method='get' name='login'>
+              <label class='username' for='username'>
+                <span>username</span>
+              </label>
+              <input name='username' type='text' />
+              <strong class='msg'>*</strong>
+              <div class='clear'></div>
+              <label class='password' for='password'>
+                <span>password</span>
+              </label>
+              <input name='password' type='password' />
+              <strong class='msg'>*</strong>
+              <div class='telephone'>
+                <input name='telephone' type='text' />
+              </div>
+              <div class='findpassword' style='display:none'>
+                <label for='findpassword'></label>
+                <input name='findpassword' type='text' />
+              </div>
+              <div class='clear'></div>
+            </form>
+            <p class='forget'>
+              forget your
+              <a href='javascript:login.findpassword()'>password?</a>
+            </p>
+            <a class='submit' href='javascript:login.submit()'>
+              <span>log in</span>
+            </a>
+            <div class='clear'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type='text/javascript'>
+      date_str('#date-str-1, #date-str-2');
+      date_quote('#quote-str-1, #quote-str-2');
+    </script>
+  </body>
+  <div style='display:none'>
+    <div id='site_id'>
+      1
+    </div>
+    <img src='/assets/1/image/2009/09/07/73273_1732604389.png' width='451' height='306'/>
+    <img src='/assets/1/image/2009/09/07/73299_3143581229.png' width='360' height='72'/>
+  </div>
+</html>
