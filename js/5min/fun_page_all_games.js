@@ -166,5 +166,19 @@ var ALL_GAMES = {
   page_url: '/iPlay/iFun/dancing/game24.html',
   iframe_url: '/iPlay/iFun/SamsPingPongJuvieEscape/game10775_iframe.html',
   thumbnail: '/images/balls.png'
-}
+},
+25: {
+  caption: 'What\'s Gibby Thinking About: The Game!',
+  description: 'If you wanna know what Gibby is thinking about right now, you gotta play our new game! It\'s weird and fun, just like Gibby!',
+  page_url: '/iPlay/iFun/Whats-Gibby-Thinking-Game/game25.html',
+  iframe_url: '/iPlay/iFun/Whats-Gibby-Thinking-Game/game25_iframe.html',
+  thumbnail: '/images/69020_2525147695.jpg'
+},
+26: {
+  caption: 'The Magic Meatball',
+  description: 'Ask the magic meatball!',
+  page_url: '\/iPlay\/iFun\/game26.html',
+  iframe_url: '\/iPlay\/iFun\/game26_iframe.html',
+  thumbnail: '/images/72778_3710286266.jpg'
+},
 };
