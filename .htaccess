@@ -1,6 +1,6 @@
 php_value display_errors 1
-ErrorDocument 404 /error.html
-ErrorDocument 403 /error.html
+ErrorDocument 404 /404.html
+ErrorDocument 403 /404.html
 Options -Indexes
 # HTID:7823898: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
 php_value display_errors 1
