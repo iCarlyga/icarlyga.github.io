@@ -1,0 +1,7 @@
+php_value display_errors 1
+ErrorDocument 404 /error.html
+ErrorDocument 403 /error.html
+Options -Indexes
+# HTID:7823898: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:7823898:
