@@ -1,0 +1,109 @@
+
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>iCarly.ga</title>
+    <meta content='text/html;charset=UTF-8' http-equiv='content-type' />
+    <meta content='iCarly.com' http-equiv='description' />
+    <meta content='iCarly.com' http-equiv='keywords' />
+    <link href='/stylesheets/nonavtemplate.css' media='screen' rel='stylesheet' type='text/css' />
+    
+    <script type='text/javascript'>
+      var contentType = '';
+      var prop4 = '';
+      var prop21 = '';
+      var prop22 = '';
+    </script>
+    <script type="text/javascript" src="/js/icarly_anr.js"></script>
+    <script type="text/javascript">
+    	var pageName=location.pathname;    
+    	var account_info = "nickvia,viaicarly"; 
+    
+        if (window.location.href.indexOf("review.") != -1) 
+          account_info = "nickviadev"; 
+        com.mtvi.reporting.Account={ 
+          name: account_info, 
+          dynamicAccountSelection: false, 
+          linkInternalFilters: 'javascript:', 
+          trackExternalLinks: true, 
+          trackDownloadLinks: true 
+        }; 
+        
+        var dispatcher=new com.mtvi.reporting.Dispatcher(); 
+        com.mtvi.config.qs=com.mtvi.util.queryStringToHash(window.location.search); 
+        dispatcher.setDefaultData(); 
+        dispatcher.setAttribute("pageName","icarly"+location.pathname); 
+        dispatcher.setAttribute("channel","icarly");
+        dispatcher.setAttribute("hier1","icarly"+location.pathname); 
+        dispatcher.setAttribute("prop4",prop4);
+        dispatcher.setAttribute("prop21",prop21);    
+        com.mtvi.ads.AdManager.setDartSite("icarly.nol"); 
+        com.mtvi.ads.AdManager.setDefaultSections(location.pathname); 
+        com.mtvi.ads.AdManager.setPositionThreshold(2); 
+        
+       if(contentType=='game')
+       	{
+       		dispatcher.setAttribute("prop4","icarly-"+prop4);
+       	}
+        
+        else if (contentType=='gallery')
+       	{
+        		dispatcher.setAttribute("prop22",pageName);
+      	}	
+        dispatcher.sendCall();
+        
+    function gamePlay(){
+    	dispatcher.setAttribute("pageName",pageName+"-playAgain");
+    	dispatcher.sendCall();
+    	}
+    	
+    function audio(audioName){
+    	var prop21=audioName;
+    	dispatcher.setAttribute("pageName",pageName+"-"+prop21);
+    	dispatcher.sendCall();
+    	}
+    </script>
+  </head>
+  <body>
+    <div id='MainPage'>
+      <div id='headersafety'>
+        <a href="/"><img src='/images/43273_702081131.gif' class='logo2' width='466' height='108'/></a>
+        <img src='/images/61115_1037896134.gif' class='topleftsafe' width='444' height='120'/>
+        <img src='/images/61612_2960842766.gif' class='safety' width='324' height='228'/>
+        <img src='/images/74530_3897652118.jpg' class='safetyimage' width='662' height='623'/>
+      </div>
+      <div class='OrangeBG'>
+        <div class='StripeText safetypadding'>
+          <div>
+            <ol>
+              <li>Never give out your personal information online. Would you tell a stranger who you are and where you live? No way! Well chatting online is just like talking to strangers (except online, you can't even SEE them!) SO never give anyone your whole name, address or phone number on the internet, in email, in an instant message or in a chat room. iCarly.com will only ask your parents for information about you if your video or photo has been chosen to air on iCarly. If you know your Social Security Number or credit card or bank account number, definitely do not give those out either. And while you're at it, don't post anyone else's information, and be careful telling other people online the name of your school, sports team or favorite hang out. That information is yours and we want to keep it that way.</li>
+              <li>Don't use your real name in your screen name. And while you're at it, don't include your age or your hometown either. You may think your screen name is super creative, but if it says too much about you, people you don't know can find out more about you then you think.</li>
+              <li>Keep your password to yourself. Giving out your password is like giving your brother or sister the key to your room. Do you want them in there checking out all of your stuff whenever they feel like it? NO way! Same goes for your personal stuff online.</li>
+              <li>Read the rules and privacy options for websites that let you connect with others online. We mean really read 'em. Some sites only let certain people who have registered read posts, chat and look at other users' webpages. Others let anyone who come to the site check out everything. No matter which kind of site you're on, find out if you can restrict your information so that it can only be seen by the people you choose.</li>
+              <li>Only share stuff online that you don't mind anyone seeing. Anyone can use the internet and most people do. That includes your parents, your friends' parents, your teachers, and the creepy guy in the back of math class who never raises his hand. If you want private info to stay private, don't post it online.</li>
+              <li>Once you post something online, it stays online. You can delete something you've typed or posted from a site, but people can get to older versions of that site where your info still exists. If you're not sure you should say something on the internet, you probably shouldn't.</li>
+              <li>Don't download anything if you don't know who it's from. Downloads can give your computer viruses, mess up your applications and even cause your email server to send messages with your name on them to people you don't know. You can set the preferences on your computer to warn you about downloads before it opens them. So stop and think before you download anything you're not sure of. You don't know where that thing has been.</li>
+              <li>Keep your online friendships online. There are all kinds of cool people using the internet. But there's no way of keeping the creeps out. If someone you met online wants to meet you in person, tell an adult. If you do end up meeting face to face bring a parent or another close adult with you.</li>
+              <li>And finally, if you feel unsafe, tell an adult. If someone or something online is making you uncomfortable, tell a parent, a teacher or another adult you trust. Ask the adult to help you report the incident to the website, or if necessary to the police. Your actions might end up helping a lot of other people too.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class='footer3'>
+        <div>
+          <img src='/images/44443_3446987456.gif' width='742' height='65'/>
+        </div>
+      </div>
+      <div class='center'>
+        <img src='/images/44622_3092493173.gif' class='footersquares' width='433' height='56'/>
+      </div>
+      <div id='footerwrap'>
+        <a href="/terms/privacypolicy.html">Privacy Policy/Your California Privacy Rights</a><br />
+        <a href="/terms/termsandconditions.html">Please Read Our Terms of Use</a><br />
+        <a href="/terms/copyrightcompliance.html">Copyright Compliance Policy</a><br />
+        <a href="/terms/safety.html">Safety Guide</a><br />© 2010 Viacom International Inc. All Rights Reserved
+      </div>
+    </div>
+  </body>
+</html>
