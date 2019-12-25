@@ -33,7 +33,5 @@ Freddie: {
        url: '/iBlogs/entry1.html'}
     }
    }
-
-},
-
+}
 };
