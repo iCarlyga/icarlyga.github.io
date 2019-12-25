@@ -54,5 +54,13 @@ var ALL_SONGS = {
     length: 195,
     file_path: '\/images\/kermit.mp3',
     album_image_url: '\/images\/68205_981543519.png'
+  },
+  8: {
+    title: 'Carly\&#8217;s Happy Song',
+    artist: 'Soundtrack from Carly\&#8217;s Daydream',
+    album: 'Soundtrack from Carly\&#8217;s Daydreams',
+    length: 44.627,
+    file_path: '/images/61721_2302512599.mp3',
+    album_image_url: '/images/65532_2945719125.jpg'
   }
 }
