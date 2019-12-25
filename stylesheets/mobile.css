@@ -811,6 +811,7 @@ article.ivideo img, article.isongs img, article.isnaps img {
       margin-right: 30px; }
     .iblogs #characters > div .description {
       width: 352px;
+      background-color: #24356D;
       text-align: left; }
     .iblogs #characters > div h3, .iblogs #characters > div .button {
       position: absolute; }
