@@ -177,8 +177,15 @@ var ALL_GAMES = {
 26: {
   caption: 'The Magic Meatball',
   description: 'Ask the magic meatball!',
-  page_url: '\/iPlay\/iFun\/game26.html',
-  iframe_url: '\/iPlay\/iFun\/game26_iframe.html',
+  page_url: '/iPlay/iFun/meatball/game26.html',
+  iframe_url: '/iPlay/iFun/meatball/game26_iframe.html',
   thumbnail: '/images/72778_3710286266.jpg'
 },
+27: {
+  caption: 'iCarly Christmas Stack-a-thon',
+  description: 'iCarly got soooo many Christmas presents this year!!! Help Freddie stack and sort them in this ridiculously awesome game!',
+  page_url: '/iPlay/iFun/iCarlyChristmas/game27.html',
+  iframe_url: '/iPlay/iFun/iCarlyChristmas/game27_iframe.html',
+  thumbnail: '/images/64571_2501956730.jpg'
+}
 };
