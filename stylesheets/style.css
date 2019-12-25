@@ -666,7 +666,7 @@ div#top-ad {
   padding: 15px 8px 0px 8px; }
 
 #comments_modal {
-  background: url('/assets/1/image/2009/10/08/50735_1678011381.png') top left no-repeat;
+  background: url('/images/50735_1678011381.png') top left no-repeat;
   width: 448px;
   height: 362px;
   left: 206px;
@@ -748,7 +748,7 @@ div#top-ad {
       padding: 101%;
       height: 50px; }
   #comments_thanks_modal .content {
-    background: url('/assets/1/image/2009/10/08/50735_1678011381.png') top left no-repeat;
+    background: url('/images/50735_1678011381.png') top left no-repeat;
     height: 254px;
     width: 100%; }
   #comments_thanks_modal .confirm {
