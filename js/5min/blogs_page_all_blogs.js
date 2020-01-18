@@ -37,7 +37,7 @@ Sam: {
        title: 'Things I\'ve Changed in the School\'s Computer System',
        teaser: 'Read what I changed in the school\'s computer system!',
        date: 1233338400,
-       url: '/iBlogs/entry5.html'}
+       url: '/iBlogs/entry6.html'}
     }
     }
    },
