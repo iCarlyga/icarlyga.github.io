@@ -63,4 +63,13 @@ var ALL_SONGS = {
     file_path: '/images/61721_2302512599.mp3',
     album_image_url: '/images/65532_2945719125.jpg'
   }
+,
+  9: {
+    title: 'obama angry',
+    artist: 'obama care not working',
+    album: 'obama',
+    length: 55,
+    file_path: '/images/obama.mp3',
+    album_image_url: '/images/obama.jpg'
+  }
 }
