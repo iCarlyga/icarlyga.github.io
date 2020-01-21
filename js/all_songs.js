@@ -70,6 +70,6 @@ var ALL_SONGS = {
     album: 'obama',
     length: 55,
     file_path: '/images/obama.mp3',
-    album_image_url: '/images/obama.jpg'
+    album_image_url: '/images/obama.png'
   }
 }
