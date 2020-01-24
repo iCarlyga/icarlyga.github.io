@@ -28,7 +28,7 @@ var ALL_GAMES = {
   thumbnail: '/images/balls.png'
 },
 5: {
-  caption: 'iCarly\'s iSurf',
+  caption: 'iSurf',
   description: 'sam surf !',
   page_url: '/iPlay/iFun/isurf/game5.html',
   iframe_url: '/iPlay/iFun/SamsPingPongJuvieEscape/game10775_iframe.html',
@@ -187,5 +187,12 @@ var ALL_GAMES = {
   page_url: '/iPlay/iFun/iCarlyChristmas/game27.html',
   iframe_url: '/iPlay/iFun/iCarlyChristmas/game27_iframe.html',
   thumbnail: '/images/64571_2501956730.jpg'
+},
+28: {
+  caption: 'Dip Miss Briggs',
+  description: 'It\'s time to Dip Miss Briggs!',
+  page_url: '/iPlay/iFun/game28.html',
+  iframe_url: '/iPlay/iFun/game28_iframe.html',
+  thumbnail: '/images/54957_4033143316.jpg'
 }
 };
