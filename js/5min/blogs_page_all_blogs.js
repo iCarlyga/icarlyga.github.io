@@ -20,7 +20,7 @@ Carly: {
     }
     ,
     1: {
-      93: {
+      7: {
        title: 'iCarly Gets Pumped Up',
        teaser: 'Check this pic of us all pumped up!',
        date: 1234022400,
@@ -69,6 +69,16 @@ Freddie: {
        url: '/iBlogs/entry4.html'}
     }
    }
-
+},
+Spencer: {
+  2020: {
+    1: {
+      8: {
+       title: 'My Letter to Cupid',
+       teaser: 'Read my letter to Cupid!',
+       date: 1261524600,
+       url: '/iBlogs/entry8.html'}
+    }
+   }
 }
 };
