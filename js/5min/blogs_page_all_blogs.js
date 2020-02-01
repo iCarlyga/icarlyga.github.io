@@ -18,6 +18,14 @@ Carly: {
        date: 1233338400,
        url: '/iBlogs/entry5.html'}
     }
+    ,
+    1: {
+      93: {
+       title: 'iCarly Gets Pumped Up',
+       teaser: 'Check this pic of us all pumped up!',
+       date: 1234022400,
+       url: '/iBlogs/entry7.html'}
+    }
     }
    },
 Sam: {
@@ -33,7 +41,7 @@ Sam: {
 ,
   2020: {
     0: {
-      6: {
+      5: {
        title: 'Things I\'ve Changed in the School\'s Computer System',
        teaser: 'Read what I changed in the school\'s computer system!',
        date: 1233338400,
