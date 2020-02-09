@@ -25,6 +25,12 @@ Carly: {
        teaser: 'Check this pic of us all pumped up!',
        date: 1234022400,
        url: '/iBlogs/entry7.html'}
+    ,
+      9: {
+       title: 'Gibby\'s Birthday Bash!',
+       teaser: 'Everyone\'s invited to Gibby\'s Birthday Party!',
+       date: 1234029400,
+       url: '/iBlogs/entry9.html'}
     }
     }
    },
