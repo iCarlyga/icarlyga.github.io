@@ -47,7 +47,7 @@ Sam: {
 ,
   2020: {
     0: {
-      6: {
+      5: {
        title: 'Things I\'ve Changed in the School\'s Computer System',
        teaser: 'Read what I changed in the school\'s computer system!',
        date: 1233338400,
@@ -84,6 +84,14 @@ Spencer: {
        teaser: 'Read my letter to Cupid!',
        date: 1261524600,
        url: '/iBlogs/entry8.html'}
+    }
+,
+    2: {
+      8: {
+       title: 'My Fake Law School Pics',
+       teaser: 'Should I send my dad these fake Law School pics?',
+       date: 1261524600,
+       url: '/iBlogs/entry10.html'}
     }
    }
 }
