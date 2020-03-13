@@ -194,5 +194,12 @@ var ALL_GAMES = {
   page_url: '/iPlay/iFun/game28.html',
   iframe_url: '/iPlay/iFun/game28_iframe.html',
   thumbnail: '/images/54957_4033143316.jpg'
+},
+29: {
+  caption: 'iSpaceOut',
+  description: 'Help Carly escape her alien attackers!',
+  page_url: '/iPlay/iFun/iSpaceOut/game29.html',
+  iframe_url: '/iPlay/iFun/iSpaceOut/game29_iframe.html',
+  thumbnail: '/images/iSpaceOut-295x220.jpg'
 }
 };
