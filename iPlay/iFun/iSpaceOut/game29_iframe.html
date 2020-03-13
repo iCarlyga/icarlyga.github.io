@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    <title></title>
+    <style type='text/css'>
+      #com_icarly_game_border {
+        width: 640px;
+        height: 450px;
+        background-color: black; }
+      
+      a, a:visited {
+        font-size: 12px;
+        color: #000099;
+        font-family: comic sans ms, sans-serif;
+        text-decoration: none; }
+      
+      a:hover {
+        border-bottom: 1px solid #000099; }
+      
+      div {
+        width: 640px;
+        text-align: center;
+        margin-top: 4px; }
+    </style>
+    <script type='text/javascript'>
+      function icarly_center_game() {
+      var offset_top = 225 - parseInt(document.getElementById('com_icarly_game_container').getElementsByTagName('object')[0].height, 10)/ 2;
+      document.getElementById('com_icarly_game_container').style.paddingTop = offset_top + 'px'}
+    </script>
+  </head>
+  <body onLoad='icarly_center_game()'>
+    <div id='com_icarly_game_border'>
+      <div id='com_icarly_game_container'>
+        <object type='application/x-shockwave-flash' height='400' width='550' data='/iPlay/iFun/iSpaceOut/iSpaceOut.swf'>
+  <param name='flashVars' value='siteRoot=' />
+  <param name='movie' value='/iPlay/iFun/iSpaceOut/iSpaceOut.swf' />
+  <param name='quality' value='high' />
+  <param name='allowScriptAccess' value='always' />
+  <param name='allowFullScreen' value='true' />
+  <param name='wmode' value='transparent' />
+</object>
+      </div>
+    </div>
+    <div>
+      <a href='http://icarly.ga/' target='blank'>
+        Visit iCarly.ga for more videos, fun games, and more!
+      </a>
+    </div>
+    <script type='text/javascript'>
+      icarly_center_game()
+    </script>
+  </body>
+</html>
