@@ -74,6 +74,14 @@ Freddie: {
        date: 1200153600,
        url: '/iBlogs/entry4.html'}
     }
+,
+    2: {
+      11: {
+       title: 'Little Freddie: On the Go!',
+       teaser: 'Help Little Freddie see the world!',
+       date: 1261524600,
+       url: '/iBlogs/entry11.html'}
+    }
    }
 },
 Spencer: {
@@ -87,7 +95,7 @@ Spencer: {
     }
 ,
     2: {
-      8: {
+      10: {
        title: 'My Fake Law School Pics',
        teaser: 'Should I send my dad these fake Law School pics?',
        date: 1261524600,
